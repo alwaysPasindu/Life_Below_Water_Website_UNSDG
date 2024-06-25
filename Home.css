@@ -20,13 +20,13 @@
 
 }
 
-}
-.navbar{
+
+/* .navbar{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: aqua;   
-}
+} */
 
 .navbar a{
     position: relative;
@@ -54,7 +54,7 @@
     width: 100%;
 }
 body{
-    background: url(background.jpg)no-repeat;
+    background: url(images/Home/background.jpg)no-repeat;
     background-size: cover;
     background-position: justify ;
 }
