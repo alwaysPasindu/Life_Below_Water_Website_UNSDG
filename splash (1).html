@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash screen</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .MainScreen {
+			position: relative;
+			width: 100%;
+			height: 100%;
+		} 
+		#background-video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+        img{
+    		height: 100px;
+			width: 100px;
+			border-radius: 10px;
+			transition: 1s ease;
+		}
+		img:hover{
+			transform: scale(1.2);
+			transition: 1s ease;
+			cursor: pointer;
+		}
+        #title{
+            color: #eaebee;
+            font-weight: bolder;
+            font-size: 60px; 
+            font-family: Georgia, 'Times New Roman', Times, serif;            
+        }
+        #title:hover{
+			transform: scale(1.2);
+			transition: 1s ease;
+			cursor: pointer;
+		}
+
+        #mission1{
+            color: #eaebee;
+            font-weight: bolder; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            padding-left: 3rem;
+			padding-right: 20rem;
+        }
+        #mission2{
+            color: #eaebee;
+            font-weight: 100; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+            display: flex;
+            position: relative;
+            border: 4px solid wheat;
+            border-radius: 10px;
+            width: 400px;
+            height: 120px;
+            margin-left: 40%;
+            padding: 15px;    
+                    
+        }
+        dl dt{
+            color: rgb(183, 233, 245);
+            font-weight: bolder;
+            font-size: 30px;
+            padding: 8px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        dl dd{
+            color: antiquewhite;
+            font-weight: bolder;
+            font-size: 25px;
+            list-style: none;
+            display: inline;
+            position: relative;
+            box-sizing: border-box;
+            border: 5px inset whitesmoke;
+            width: 30px;
+            height: 20px;
+            padding: 8px;
+            margin: 30px;   
+            /* background-color: rgb(2, 13, 77);   */
+            border-radius: 10px;        
+        }
+        a:visited{
+            color: antiquewhite;
+        }
+        a:link{
+            color: antiquewhite;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(145, 186, 224);
+			cursor: pointer;
+            text-decoration: underline;
+		} 
+
+
+		.overlayText1{			
+			position: relative;
+			text-align: center;
+			padding-top: 0;
+		}		
+		
+	</style>
+	<script>
+		setTimeout(function() {
+			window.location.href = 'index.html';
+            // MainScreen.style.top = '-100vh';
+		}, 4000);
+		// will redirect to home page automatically after 4 seconds.
+	</script>
+
+    <script>
+
+    </script>
+
+    </style>
+</head>
+
+<body> 
+    <div class="MainScreen">
+        <video autoplay muted loop id="background-video">
+            <source src="images/Splash/backgroundVideoSplash1.mp4" type="video/mp4">
+          </video> 
+    
+        <main>
+            <div class="overlayText1">                
+                <img  src="images/Home/Sustainable_Development_Goal_14.png" alt="logo">
+                <h1 id="title"><span>LIFE BELOW</span><span> WATER</span></h1>
+            
+                <div>
+                    <h1 id="mission1">OUR MISSION:</h1>
+                    <p id="mission2">Conserve and sustainably use the oceans, seas and <br>marine resources for sustainable development.</p>
+                </div>
+                <div>
+                    <dl>
+                        <dt>Group Members
+                            <dd><a href="userProfile.html">Gayashi Ramanayake</a></dd>
+                            <dd><a href="userProfile.html">Pasindu Dilshan</a></dd>
+                            <dd><a href="userProfile.html">Akila Lochana</a></dd>
+                            <dd><a href="userProfile.html">Nithika Thewjan</a></dd>
+                        </dt>
+                    </dl>
+                </div>
+            </div>
+        </main>
+    </div>  
+</body>
+</html>
