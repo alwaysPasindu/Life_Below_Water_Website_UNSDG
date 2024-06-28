@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+    background-image: url(images/Home/a1ca9477-5065-47ae-aab5-33b6ff276569.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+
+}
