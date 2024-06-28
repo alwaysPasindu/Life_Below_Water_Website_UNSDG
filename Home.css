@@ -56,14 +56,14 @@
 .navbar a{
     position: relative;
     font-size: 20px;
-    color: black;
+    color: white;
     text-decoration: none;
     margin-left: 65px;   
     font-weight: 700;
     transition: .3s;
 }
 .navbar a:hover {
-    color: white;
+    color: black;
 }
 
 .navbar a::before{
