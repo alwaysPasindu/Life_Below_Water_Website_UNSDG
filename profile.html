@@ -30,9 +30,19 @@
         <span class="progressText">Profile completed 25%</span>
     </div>
 
+
+    <div class="output" id="output">
+        <p>Name: <span id="outputName"></span></p>
+        <p>Surname: <span id="outputSurname"></span></p>
+        <p>Age: <span id="outputAge"></span></p>
+        <p>Gender: <span id="outputGender"></span></p>
+
+    </div>
+
+
     <div class="div1Name" id="div1Name">
         <div class="div2Name">
-            <h2>STEP 1 Personal details | Question 1/4</h2>
+            <h2>STEP 1 Personal details | Question 1/5</h2>
             <form>
                 <label for="name" class="yourName">Your Name:</label><br>
                 <input type="text" name="name" id="name" placeholder="Enter Your First Name">
@@ -42,11 +52,10 @@
         </div>
     </div>
 
-    <div class="output" id="output"></div>
 
     <div class="div1Name" id="div1Surname" style="display:none;">
         <div class="div2Name">
-            <h2>STEP 1 Personal details | Question 2/4</h2>
+            <h2>STEP 1 Personal details | Question 2/5</h2>
             <form>
                 <label for="surname" class="yourName">Your Surname:</label><br>
                 <input type="text" name="name" id="surname" placeholder="Enter Your Surname">
@@ -59,15 +68,37 @@
 
     <div class="div1Name" id="div1Age" style="display:none;">
         <div class="div2Name">
-            <h2>STEP 1 Personal details | Question 3/4</h2>
+            <h2>STEP 1 Personal details | Question 3/5</h2>
             <form>
                 <label for="Age" class="yourName">Your Age:</label><br>
-                <input type="text" name="name" id="Age" placeholder="Enter Your Age">
+                <input type="text" name="name" id="age" placeholder="Enter Your Age">
             </form>
-            <button class="next" id="next">Next</button>
+            <button class="next" id="next3">Next</button>
             <button class="skip">Skip</button>
         </div>
     </div>
+
+
+    <div class="div1Radio" id="div1Gender" style="display:none;">
+        <div class="div2Radio">
+            <h2>STEP 1 Personal details | Question 4/5</h2>
+            <form>
+                Select your Gender: <br>
+                <label for="gender" class="yourName">Male</label><br>
+                <input type="radio" name="myRadio" id="male" value="male">
+
+                <label for="gender" class="yourName">Female</label><br>
+                <input type="radio" name="myRadio" id="female" value="female">
+
+                <label for="gender" class="yourName">Other</label><br>
+                <input type="radio" name="myRadio" id="other" value="other">
+            </form>
+            <button class="next" id="next4">Next</button>
+            <button class="skip">Skip</button>
+        </div>
+    </div>
+
+
 
 
 
