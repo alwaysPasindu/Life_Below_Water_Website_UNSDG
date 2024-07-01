@@ -43,6 +43,25 @@ h2 {
 
 }
 
+
+.output {
+
+    position: absolute;
+    top: 250px;
+    left: 1100px;
+    height: 200px;
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+
 .div1Name {
 
     position: relative;
@@ -59,6 +78,7 @@ h2 {
     align-items: center;
     justify-content: center;
 }
+
 
 .div1Name .div2Name {
     width: 100%;
@@ -109,4 +129,26 @@ h2 {
     cursor: pointer;
     border: solid rgb(59, 55, 55);
 
+}
+
+.div1Radio {
+
+    position: relative;
+    top: 250px;
+    left: 460px;
+    height: 200px;
+    width: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.div1Radio .div2Radio {
+    width: 100%;
+    padding: 20px;
 }
