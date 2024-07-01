@@ -25,15 +25,56 @@
     </header>
     <h1>USER PROFILE FORM</h1>
 
-    <div class="div1">
-        <div class="div2">
+    <div class="progress">
+        <div class="fillProgress"></div>
+        <span class="progressText">Profile completed 25%</span>
+    </div>
+
+    <div class="div1Name" id="div1Name">
+        <div class="div2Name">
             <h2>STEP 1 Personal details | Question 1/4</h2>
             <form>
                 <label for="name" class="yourName">Your Name:</label><br>
-                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                <input type="text" name="name" id="name" placeholder="Enter Your First Name">
             </form>
+            <button class="next" id="next1">Next</button>
+            <button class="skip">Skip</button>
         </div>
     </div>
+
+    <div class="output" id="output"></div>
+
+    <div class="div1Name" id="div1Surname" style="display:none;">
+        <div class="div2Name">
+            <h2>STEP 1 Personal details | Question 2/4</h2>
+            <form>
+                <label for="surname" class="yourName">Your Surname:</label><br>
+                <input type="text" name="name" id="surname" placeholder="Enter Your Surname">
+            </form>
+            <button class="next" id="next2">Next</button>
+            <button class="skip">Skip</button>
+        </div>
+    </div>
+
+
+    <div class="div1Name" id="div1Age" style="display:none;">
+        <div class="div2Name">
+            <h2>STEP 1 Personal details | Question 3/4</h2>
+            <form>
+                <label for="Age" class="yourName">Your Age:</label><br>
+                <input type="text" name="name" id="Age" placeholder="Enter Your Age">
+            </form>
+            <button class="next" id="next">Next</button>
+            <button class="skip">Skip</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
 
 
 
