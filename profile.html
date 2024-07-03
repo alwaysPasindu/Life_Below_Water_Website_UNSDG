@@ -31,12 +31,13 @@
     </div>
 
 
-    <div class="output" id="output">
-        <p>Name: <span id="outputName"></span></p>
-        <p>Surname: <span id="outputSurname"></span></p>
-        <p>Age: <span id="outputAge"></span></p>
-        <p>Gender: <span id="outputGender"></span></p>
-
+    <div class="output" id="outputDiv" style="display: none;">
+        <p class="outputName" id="outputName" style="display:none;">Name: <span id="enteredName"></span></p>
+        <p class="outputName" id="outputSurname" style="display:none;">Surname: <span id="enteredSurname"></span></p>
+        <p class="outputName" id="outputAge" style="display:none;">Age: <span id="enteredAge"></span></p>
+        <p class="outputName" id="outputGnder" style="display:none;">Gender: <span id="enteredGender"></span></p>
+        <p class="outputName" id="outputPrivacyTerms" style="display:none;">Agree with privacy terms: <span
+                id="enteredPrivacyTerms"></span></p>
     </div>
 
 
@@ -79,26 +80,45 @@
     </div>
 
 
-    <div class="div1Radio" id="div1Gender" style="display:none;">
-        <div class="div2Radio">
+    <div class="div1Name" id="div1Gender" style="display:none;">
+        <div class="div2Privacy">
             <h2>STEP 1 Personal details | Question 4/5</h2>
             <form>
-                Select your Gender: <br>
-                <label for="gender" class="yourName">Male</label><br>
+                <p class="selectGender">Select your Gender:</p> <br>
+
                 <input type="radio" name="myRadio" id="male" value="male">
+                <label for="gender" class="yourName">Male</label>
 
-                <label for="gender" class="yourName">Female</label><br>
                 <input type="radio" name="myRadio" id="female" value="female">
+                <label for="gender" class="yourName">Female</label>
 
-                <label for="gender" class="yourName">Other</label><br>
+
                 <input type="radio" name="myRadio" id="other" value="other">
+                <label for="gender" class="yourName">Other</label>
+
             </form>
             <button class="next" id="next4">Next</button>
             <button class="skip">Skip</button>
         </div>
     </div>
 
+    <div class="div1Name" id="div1PrivacyTerms">
+        <div class="div2Privacy">
+            <h2>STEP 1 Personal details | Question 5/5</h2>
+            <form>
+                <p class="selectGender">Agree with privacy terms: </p><br>
+                <div class="yesNoBethween">
+                    <input type="radio" name="privacyTerms" id="yes" value="yes">
+                    <label for="yes">Yes</label>
 
+                    <input type="radio" name="privacyTerms" id="no" value="no">
+                    <label for="no">No</label>
+                </div>
+            </form>
+            <button class="next" id="next5">Next</button>
+            <button class="skip">Skip</button>
+        </div>
+    </div>
 
 
 

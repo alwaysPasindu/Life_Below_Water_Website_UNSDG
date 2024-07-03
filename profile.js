@@ -1,5 +1,5 @@
 
-function textTo(nextButton, text, previousD1, nextD1, output) {
+function textTo(nextButton, text, previousD1, nextD1, output, entered) {
     document.getElementById(nextButton).onclick = function () {
 
         var enteredName = document.getElementById(text).value;
@@ -7,11 +7,14 @@ function textTo(nextButton, text, previousD1, nextD1, output) {
             alert("Please enter your name!")
         }
         else {
+            document.getElementById('outputDiv').style.display = "block";
+
             document.getElementById(previousD1).style.display = "none";
             document.getElementById(nextD1).style.display = "block";
 
+            document.getElementById(output).style.display = "block";
+            document.getElementById(entered).innerHTML = enteredName;
 
-            document.getElementById(output).innerHTML = enteredName;
 
         }
 
@@ -20,7 +23,8 @@ function textTo(nextButton, text, previousD1, nextD1, output) {
 }
 
 
-function radioButton() {
+
+function next4BttnClick() {
     document.getElementById("next4").onclick = function () {
         // Get all radio buttons with the name 'myRadio'
         var radios = document.getElementsByName('myRadio');
@@ -36,7 +40,30 @@ function radioButton() {
 
         // Check if a value is selected and show an alert
         if (selectedValue) {
-            document.getElementById('outputGender').innerHTML = selectedValue;
+            document.getElementById("outputGnder").style.display = "block";
+            document.getElementById('enteredGender').innerHTML = selectedValue;
+        } else {
+            alert('No option selected');
+        }
+
+        document.getElementById('div1Gender').style.display = "none";
+        document.getElementById('div1PrivacyTerms').style.display = "block"
+    }
+}
+
+function next5BttnClick() {
+    document.getElementById("next5").onclick = function () {
+        var checkName = document.getElementsByName('privacyTerms');
+        var selectedCheck = null;
+        for (var i = 0; i < checkName.length; i++) {
+            if (checkName[i].checked) {
+                selectedCheck = checkName[i].value;
+                break;
+            }
+        }
+        if (selectedCheck) {
+            document.getElementById("outputPrivacyTerms").style.display = "block";
+            document.getElementById('enteredPrivacyTerms').innerHTML = selectedCheck;
         } else {
             alert('No option selected');
         }
@@ -48,13 +75,12 @@ function radioButton() {
 
 
 
+textTo('next1', 'name', 'div1Name', 'div1Surname', 'outputName', 'enteredName');
 
-textTo('next1', 'name', 'div1Name', 'div1Surname', 'outputName');
+textTo('next2', 'surname', 'div1Surname', 'div1Age', 'outputSurname', 'enteredSurname',);
 
-textTo('next2', 'surname', 'div1Surname', 'div1Age', 'outputSurname');
+textTo('next3', 'age', 'div1Age', 'div1Gender', 'outputAge', 'enteredAge');
 
-textTo('next3', 'age', 'div1Age', 'div1Gender', 'outputAge');
+next4BttnClick();
 
-radioButton();
-
-
+next5BttnClick();
