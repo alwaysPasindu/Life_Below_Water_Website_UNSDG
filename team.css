@@ -8,38 +8,34 @@ body {
 }
 
 
-h1 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-    font-size: 50px;
-    position: relative;
-    top: -180px;
-    left: 300px;
-}
 
 .mainDiv {
-    background: white;
-    padding: 20px;
+    width: 1300px;
+    height: 450px;
+    padding: 80px;
     border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     text-align: center;
-
-
+    position: relative;
+    top: 50px;
+    font-size: 20px;
 }
 
 .team {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     margin-top: 20px;
 }
 
 .team_Member {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 
 .team_Member img {
