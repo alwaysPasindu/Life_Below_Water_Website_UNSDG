@@ -63,7 +63,7 @@
     transition: .3s;
 }
 .navbar a:hover {
-    color: black;
+    color: rgb(0, 255, 255);
 }
 
 .navbar a::before{
@@ -73,7 +73,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: black;
+    background: rgb(9, 236, 236);
     transition: .3s; 
 }
 
@@ -84,7 +84,15 @@ body{
     min-height: 101vh;
     background: url(images/Home/BGPEd.png)no-repeat;
     background-size: cover;
-    background-position: center  ;
+    background-position: center;
+    width: 100vw; 
+    overflow-x: hidden;
+     
+}
+
+
+.footer{
+    z-index: ;
 }
 
 /* 
