@@ -12,6 +12,7 @@
 body{
     min-height: 100vh;
     background: url(images/Home/BGPEd.png)no-repeat;
+    background-attachment:fixed ;
     background-size: cover;
     background-position: center;
     width: 100vw; 
@@ -26,7 +27,7 @@ body{
     padding: 1.3rem 10%;
    
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     z-index: 100;
    
@@ -34,6 +35,7 @@ body{
 }
 
 /* .logo{
+    justify-content: flex-start;
     height: 75px;
     width: 75px;
     border-radius: 10px;
@@ -79,25 +81,57 @@ body{
 }
 
 .logo{
-    font-size: 2rem;
-    color: #fff;
+ 
     text-decoration: none;
-    font-weight: 700;
     height: 75px;
     width: 75px;
     border-radius: 10px;
-    margin-right: 65px;
+    margin-right: auto;
     align-self: left;
 
 }
 
+
+
 .navbar a {
-    font-size: 1.15rem;
+    
+    position: relative;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
+    
+    padding-bottom: 5px;
+    padding-left: 8px;
     font-weight: 750;
-    margin-left: 2.5rem;
+    margin-left: 30px;
     transition: .3s;
+    
+}
+
+
+.navbar a:hover {
+    color:#0ef;
+}
+
+.navbar a span {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:105%;
+    height: 100%;
+   
+    z-index: -1;
+    border-bottom: 3px solid #0ef;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.navbar a:hover span{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+
 }
 
 
@@ -151,6 +185,7 @@ body{
         position: absolute;
         top: 100%;
         
+        
         left: 0;
         width: 100;
         /* height: 0; */
@@ -163,7 +198,7 @@ body{
 
     .navbar {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         height: 50vh;
         width: 100vw;

@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
     <link rel="stylesheet" href="Home.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -12,8 +10,7 @@
 
 <body>
     <header class="header">
-        <!-- <a href="#" class="logo"><img src="images/Home/Sustainable_Development_Goal_14.png"  alt="LOGO" class="logo"></a>  -->
-        <a href="#" class="logo"></a><img src="images/Home/Sustainable_Development_Goal_14.png"  alt="LOGO" class="logo"></a>
+        <a href="index.html" class="logo"><img src="images/Home/Sustainable_Development_Goal_14.png"  alt="LOGO" class="logo"></a> 
 
         <input type="checkbox" id="check">
         <label for="check" class="icons">
@@ -23,7 +20,7 @@
         </label>
         <nav class="navbar">
 
-            <a href="index.html" class="active" style="--i:0;">HOME <span></span></a>
+                <a href="index.html" class="active" style="--i:0;">HOME <span></span></a>
                 <a href="Gallery.html" style="--i:1;">GALLERY <span></span></a>
                 <a href="shop.html" style="--i:2;">SHOP <span></span></a>
                 <a href="Feedback.html" style="--i:3;">FEEDBACK <span></span></a>
@@ -34,5 +31,19 @@
         
         </nav>
     </header>
+
+
+<main>
+    <p>Life Belo Water</p>
+</main>
+
+<script > currentLoc = location.href;
+    menuItems = document.querySelectorAll("nav a");
+    
+    menuItems.forEach(menuItem => {
+    if(menuItem.href === currentLoc)
+    menuItem. className = "active"
+    
+    });</script>
 </body>
 </html>
