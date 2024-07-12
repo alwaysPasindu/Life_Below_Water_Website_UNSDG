@@ -1,12 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+
 ul {
     display: inline;
     
 }
-.shop_name{
-    display: inline-flex;
+.shop_header{
+    display: flex;
     padding: 10px;
     text-align: center;
     color: aliceblue;
+}
+.shop_name{
+    padding-right: 5px;
+    margin: auto;
+
+}
+h1{
+    text-align: center;
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 50px;
 }
 .cart_icon{
     position: absolute;
@@ -20,6 +35,13 @@ svg{
     display: flex;
     padding: 10px;
     padding-left: 30px;
+}
+h3{
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: aliceblue;
 }
 .tshirt{
     padding-top: 20px;
