@@ -7,7 +7,17 @@ body {
     margin: 0;
 }
 
+h1 {
+    position: absolute;
+    top: 10px;
+    left: 480px;
+    font-size: 60px;
+    background-image: linear-gradient(43deg, #5f7403 0%, #e8cfe6 46%, #cbb408 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
 
+}
 
 .mainDiv {
     width: 1300px;
