@@ -2,18 +2,27 @@ ul {
     display: inline;
     
 }
-/* .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: rgba(255, 255, 255, .1);
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(255, 255, 255, .2);
+.shop_name{
+    display: inline-flex;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+.cart_icon{
+    position: absolute;
+    left: 90%
 
-} */
+}
+svg{
+    color: aliceblue;
+}
+.categories{
+    display: flex;
+    padding: 10px;
+    padding-left: 30px;
+}
+.tshirt{
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 55px;
+}
