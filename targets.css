@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.img1{
+    float: left;
+    
+    height: 150px;
+    margin-left: 50px;
+    border-radius: 1rem;
+}
+
+h2{
+    display:flex;
+    align-content:end;
+    margin: 200px ;
+    color: #fff;
+}
+
+.p1{
+    ;
+    color: #fff;
+}
