@@ -33,26 +33,16 @@ body{
     border-bottom: 2px solid rgba(255, 255, 255, .2);
 }
 
-/* .logo{
-    justify-content: flex-start;
-    height: 75px;
-    width: 75px;
-    border-radius: 10px;
-    margin-right: 65px;
-    
-} */
+
 
 .header::before{
     content: '';
     position: absolute;
     top: 0;
-    /* left: -100%; */
+   
     left: 0;
     width: 100%  ;
     height: 100%;
-    /* background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
-    transition: .5s;
-    background: rgba(255, 255, 255, .1);  */
     background: rgba(0, 0, 0, -1);
     backdrop-filter: blur(50px);
     z-index: -1;
@@ -67,10 +57,7 @@ body{
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
     transition: .5s;
-    /* background: rgba(255, 255, 255, .1); 
-    background: rgba(0, 0, 0, -1); */
-    /* backdrop-filter: blur(50px); */
-    /* z-index: -1; */
+
 
 }
 
@@ -511,4 +498,4 @@ footer{
     font-size: 25px;
     font-weight: 550;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1)
-} */
+/*  */
