@@ -230,3 +230,40 @@ body{
     }
     
 }
+
+
+
+.missionpic{
+    height: 400px;
+    width: 400px;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    transition: box-shadow 0.3s ease; 
+}
+
+
+.missionheading{
+    margin-left: 20px;
+    color: white;
+    font-size: 90px;
+    font-weight: 705;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+    transition: text-shadow 0.3s ease; 
+}
+
+
+.missioncontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.missioncontent p{
+   
+    color: white;
+    width: 600px;
+    font-size: 25px;
+    font-weight: 550;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1)
+}
