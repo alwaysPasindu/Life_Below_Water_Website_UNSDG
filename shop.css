@@ -20,13 +20,25 @@ h1{
     text-align: center;
     font-family: "Playwrite HR Lijeva", cursive;
     font-optical-sizing: auto;
-    font-weight: 100;
     font-style: normal;
     font-size: 50px;
+    font-weight: bolder;
 }
 .cart_icon{
     position: absolute;
-    left: 90%
+    left: 90%;
+}
+.cart_icon span{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(138, 1, 1);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 45%;
 }
 .cart_icon:hover{
     transform: scale(1.2);
@@ -79,10 +91,10 @@ h3{
     box-sizing: border-box;
     padding: 30px;
     text-align: center;
-    margin-left: 30px; 
-    margin-right: 20px;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-left: 25px; 
+    margin-right: 25px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 20px rgba(238, 219, 219, 0.5);   
     border-radius: 20px;   
@@ -139,5 +151,50 @@ h3{
     margin-right: 5px;
     margin-bottom: 10px;
     margin-left: 5px;
+}
+
+/* Shopping Cart */
+
+.cartTab.active {
+    left: 0;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #3b3a3a;
+    color: #eeeaea;
+    position: fixed;
+    top: 18%;
+    bottom: 0%;
+    right: 0%;
+    left: -100%;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.3s;
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0%;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cartTab .button{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .button button{
+    background-color: #299bc9;
+    color: #eeeaea;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.cartTab .button button:hover{
+    background-color: rgb(14, 10, 223);
+    border-radius: 10px;
+    transform: scale(0.9);
+	transition: 1s ease;
+	cursor: pointer;
 }
 
