@@ -156,6 +156,8 @@ body{
 }
 
 
+
+
 /*Breakpoints*/
 /* @media (max-width:992px){
     .header{
@@ -174,9 +176,9 @@ body{
         display: none;
 
     }
-     */
+    
 
-    /* .icons #close-icon{
+    .icons #close-icon{
         display: none;
     }
 
@@ -188,29 +190,28 @@ body{
         position: absolute;
         top: 100%;
         
-        
         left: 0;
         width: 100;
-       
+        
         background: rgba(0, 0, 0, -1);
         backdrop-filter: blur(50px);
         box-shadow: 0. 5rem 1rem rgba(0, 0, 0, -1);
         overflow: hidden;
         transition: .3s ease;
-    }  */
+    } 
 
-    /* .navbar {
+    .navbar {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         height: 50vh;
         width: 100vw;
-        flex-direction: column; /* Stack links vertically 
+        flex-direction: column; 
         transition: .3s ease;
     }
- */
 
-    /* #check:checked~.navbar {
+
+    #check:checked~.navbar {
     
         height: 0;
     }
@@ -226,18 +227,13 @@ body{
     #check:checked~.navbar a{
         transform: translateY(0);
         transition-delay: calc(.15s * var(--i)) ;
-    } */
+    }
     
+}
+     */
 
 /* ///////////////////////////////////////////////////////////////////// */
-/* .webmission{
-    display:flex;
-    margin: 3rem;
-    align-items:center ;
-    margin-bottom: 20px;
-    
-
-} */
+/*  */
 
 
 .mission{
@@ -390,12 +386,6 @@ h3{
 
 }
 
-
-
-
-
-
-
 .card:hover{
    background-color: rgba(62, 62, 62, 62);
    color: white;
@@ -403,6 +393,78 @@ h3{
    transition: all 1s ease;
     
 }
+
+
+
+
+
+
+footer{
+    
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    
+}
+
+.footerlist{
+    
+    display: flex;
+    padding: 25px 3%;
+    backdrop-filter: blur(0px);
+    
+}
+
+.footerlist a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 75px 0 90px;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all .70s ease;
+
+}
+
+.footerlist a:hover{
+    color: aqua;
+}
+ 
+
+
+
+
+
+/* .mainfooter{
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+    backdrop-filter: blur(10px);
+}
+
+.footer a{
+    color: #fff;
+
+    text-decoration: none;
+    padding: 0 70px;
+    font-size: 20px;
+    font-weight: 800;
+    /* padding: 10px 20px; */
+
+
+
+/* .footer a:hover{
+    color: aqua;
+    transform: ;
+    transition: .3s;
+} */
+
+ */
+
+
+
+
+
+
 
 
 /* .mission{
