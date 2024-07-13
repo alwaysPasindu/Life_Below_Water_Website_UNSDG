@@ -1,6 +1,4 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -10,11 +8,12 @@
 }
 
 body{
+    margin: 0 auto;
     min-height: 100vh;
     background: url(images/Home/BGPEd.png)no-repeat;
     background-attachment:fixed ;
     background-size: cover;
-    background-position: center;
+    background-position: fixed;
     width: 100vw; 
     overflow-x: hidden;
 }
@@ -158,7 +157,7 @@ body{
 
 
 /*Breakpoints*/
-@media (max-width:992px){
+/* @media (max-width:992px){
     .header{
         padding: 1.3rem 5%;
 
@@ -175,9 +174,9 @@ body{
         display: none;
 
     }
-    
+     */
 
-    .icons #close-icon{
+    /* .icons #close-icon{
         display: none;
     }
 
@@ -192,26 +191,26 @@ body{
         
         left: 0;
         width: 100;
-        /* height: 0; */
+       
         background: rgba(0, 0, 0, -1);
         backdrop-filter: blur(50px);
         box-shadow: 0. 5rem 1rem rgba(0, 0, 0, -1);
         overflow: hidden;
         transition: .3s ease;
-    } 
+    }  */
 
-    .navbar {
+    /* .navbar {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         height: 50vh;
         width: 100vw;
-        flex-direction: column; /* Stack links vertically */
+        flex-direction: column; /* Stack links vertically 
         transition: .3s ease;
     }
+ */
 
-
-    #check:checked~.navbar {
+    /* #check:checked~.navbar {
     
         height: 0;
     }
@@ -227,25 +226,99 @@ body{
     #check:checked~.navbar a{
         transform: translateY(0);
         transition-delay: calc(.15s * var(--i)) ;
-    }
+    } */
     
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* .webmission{
+    display:flex;
+    margin: 3rem;
+    align-items:center ;
+    margin-bottom: 20px;
+    
+
+} */
+
+
+.mission{
+    margin: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-
-
-.missionpic{
-    height: 400px;
-    width: 400px;
+.missionimg{
+    height: 300px;
+    width: 300px;
     border-radius: 35px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
     transition: box-shadow 0.3s ease; 
 }
 
+.missionpic:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9); 
+}
 
 .missionheading{
     margin-left: 20px;
     color: white;
     font-size: 90px;
+    font-weight: 705;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+    transition: text-shadow 0.3s ease; 
+}
+
+.missionheading:hover {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); 
+}
+
+.missioncontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.missioncontent p{
+   
+    color: white;
+    width: 600px;
+    font-size: 25px;
+    font-weight: 550;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1)
+}
+
+
+
+
+/* .mission{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.missionimg{
+    margin: 9rem ;
+    margin-left: 40rem;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+    transition: box-shadow 0.3s ease; 
+    
+}
+
+
+.missionheading{
+    margin: 20px;
+    color: white;
+    font-size: 50px;
     font-weight: 705;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
     transition: text-shadow 0.3s ease; 
@@ -266,4 +339,4 @@ body{
     font-size: 25px;
     font-weight: 550;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1)
-}
+} */
