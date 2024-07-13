@@ -22,6 +22,15 @@ function textTo(nextButton, text, previousD1, nextD1, output, entered) {
     }
 }
 
+function skipbuttn() {
+    document.getElementById('skip1').onclick = function () {
+        document.getElementById('div1Name').style.display = "none";
+        document.getElementById('div1Surname').style.display = "block";
+        document.getElementById('outputDiv').style.display = "block";
+        document.getElementById('outputName').style.display = "block";
+    }
+}
+
 
 
 function next4BttnClick() {
@@ -75,6 +84,7 @@ function next5BttnClick() {
 
 
 
+skipbuttn();
 textTo('next1', 'name', 'div1Name', 'div1Surname', 'outputName', 'enteredName');
 
 textTo('next2', 'surname', 'div1Surname', 'div1Age', 'outputSurname', 'enteredSurname',);
@@ -84,3 +94,4 @@ textTo('next3', 'age', 'div1Age', 'div1Gender', 'outputAge', 'enteredAge');
 next4BttnClick();
 
 next5BttnClick();
+
