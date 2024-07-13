@@ -42,7 +42,7 @@ h1{
 }
 .cart_icon:hover{
     transform: scale(1.2);
-	transition: 1.5s ease;
+	transition: 1s ease;
 	cursor: pointer;
     color: #299bc9;
 }
@@ -161,7 +161,7 @@ h3{
 
 .cartTab{
     width: 400px;
-    background-color: #3b3a3a;
+    background-color: #4b4e52;
     color: #eeeaea;
     position: fixed;
     top: 18%;
@@ -176,8 +176,13 @@ h3{
     padding: 20px;
     margin: 0%;
     font-weight: bold;
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cartTab h1:hover{
+    color: black;
+    transform: scale(1.1);
+	transition: 1s ease;
 }
 .cartTab .button{
     display: grid;
@@ -187,7 +192,7 @@ h3{
     background-color: #299bc9;
     color: #eeeaea;
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
 }
 .cartTab .button button:hover{
