@@ -4,7 +4,7 @@ function textTo(nextButton, text, previousD1, nextD1, output, entered) {
 
         var enteredName = document.getElementById(text).value;
         if (enteredName == "") {
-            alert("Please enter your name!")
+            alert("Please enter your " + text)
         }
         else {
             document.getElementById('outputDiv').style.display = "block";
@@ -14,6 +14,14 @@ function textTo(nextButton, text, previousD1, nextD1, output, entered) {
 
             document.getElementById(output).style.display = "block";
             document.getElementById(entered).innerHTML = enteredName;
+
+            if (nextButton == 'next6') {
+                document.getElementById('line1').style.display = "block";
+            }
+
+            if (nextButton == 'next10') {
+                document.getElementById('line2').style.display = "block";
+            }
 
 
         }
@@ -51,12 +59,15 @@ function next4BttnClick() {
         if (selectedValue) {
             document.getElementById("outputGnder").style.display = "block";
             document.getElementById('enteredGender').innerHTML = selectedValue;
+
+            document.getElementById('div1Gender').style.display = "none";
+            document.getElementById('div1PrivacyTerms').style.display = "block";
         } else {
             alert('No option selected');
+            return;
         }
 
-        document.getElementById('div1Gender').style.display = "none";
-        document.getElementById('div1PrivacyTerms').style.display = "block"
+
     }
 }
 
@@ -73,9 +84,15 @@ function next5BttnClick() {
         if (selectedCheck) {
             document.getElementById("outputPrivacyTerms").style.display = "block";
             document.getElementById('enteredPrivacyTerms').innerHTML = selectedCheck;
+
+            document.getElementById('div1PrivacyTerms').style.display = "none";
+            document.getElementById('div1InspiredCause').style.display = "block";
+
         } else {
             alert('No option selected');
+            return;
         }
+
     }
 }
 
@@ -84,7 +101,7 @@ function next5BttnClick() {
 
 
 
-skipbuttn();
+
 textTo('next1', 'name', 'div1Name', 'div1Surname', 'outputName', 'enteredName');
 
 textTo('next2', 'surname', 'div1Surname', 'div1Age', 'outputSurname', 'enteredSurname',);
@@ -94,4 +111,23 @@ textTo('next3', 'age', 'div1Age', 'div1Gender', 'outputAge', 'enteredAge');
 next4BttnClick();
 
 next5BttnClick();
+
+textTo('next6', 'inspiredCause', 'div1InspiredCause', 'div1PreviousExperience', 'outputCourse', 'enterCourse')
+
+textTo('next7', 'previousExperience', 'div1PreviousExperience', 'div1Skill', 'outputExperience', 'enterExperience')
+
+textTo('next8', 'skill', 'div1Skill', 'div1WorkPreference', 'outputSkill', 'enterSkill')
+
+textTo('next9', 'workPreference', 'div1WorkPreference', 'div1Education', 'outputEducation', 'enteredEducation')
+
+textTo('next10', 'education', 'div1Education', 'div1Degree', 'outputDgree', 'enteredDegree')
+
+textTo('next11', 'degrees', 'div1Degree', 'div1MarineConservation', 'outputMarineConservation', 'enteredMarineConservation')
+
+textTo('next12', 'marineConservation', 'div1MarineConservation',)
+
+
+
+skipbuttn();
+
 

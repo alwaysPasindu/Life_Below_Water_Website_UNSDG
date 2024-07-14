@@ -47,10 +47,10 @@ h2 {
 .output {
 
     position: absolute;
-    top: 250px;
-    left: 1100px;
-    height: 200px;
-    width: 400px;
+    top: 180px;
+    left: 1000px;
+    height: 500px;
+    width: 370px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -172,3 +172,44 @@ h2 {
     margin-right: 30px;
 
 }
+
+.line1 {
+    position: relative;
+    top: 20px;
+}
+
+.line2 {
+    position: relative;
+    top: 50px;
+}
+
+
+
+/* .footer {
+
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    top: 200px;
+}
+
+.footerlist {
+
+    display: flex;
+    padding: 25px 3%;
+    backdrop-filter: blur(0px);
+}
+
+.footerlist a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 75px 0 90px;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all .70s ease;
+
+}
+
+.footerlist a:hover {
+    color: aqua;
+} */
