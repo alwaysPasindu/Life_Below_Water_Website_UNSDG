@@ -15,6 +15,10 @@ function textTo(nextButton, text, previousD1, nextD1, output, entered) {
             document.getElementById(output).style.display = "block";
             document.getElementById(entered).innerHTML = enteredName;
 
+            if (nextButton == 'next6') {
+                document.getElementById('line1').style.display = "block";
+            }
+
 
         }
 
@@ -76,17 +80,18 @@ function next5BttnClick() {
         if (selectedCheck) {
             document.getElementById("outputPrivacyTerms").style.display = "block";
             document.getElementById('enteredPrivacyTerms').innerHTML = selectedCheck;
+
+            document.getElementById('div1PrivacyTerms').style.display = "none";
+            document.getElementById('div1InspiredCause').style.display = "block";
+
         } else {
             alert('No option selected');
+            return;
         }
-        document.getElementById('div1PrivacyTerms').style.display = "none";
-        document.getElementById('div1InspiredCause').style.display = "block";
+
     }
 }
 
-document.getElementById('next6').onclick = function () {
-    document.getElementById('line1').style.display = "block"
-}
 
 
 
@@ -103,7 +108,16 @@ next4BttnClick();
 
 next5BttnClick();
 
-textTo('next6', 'inspiredCause', 'div1PrivacyTerms', 'div1InspiredCause', 'outputCourse', 'enterCourse')
+textTo('next6', 'inspiredCause', 'div1InspiredCause', 'div1PreviousExperience', 'outputCourse', 'enterCourse')
+
+textTo('next7', 'previousExperience', 'div1PreviousExperience', 'div1Skill', 'outputExperience', 'enterExperience')
+
+textTo('next8', 'skill', 'div1Skill', 'div1WorkPreference', 'outputSkill', 'enterSkill')
+
+textTo('next9', 'workPreference', 'div1WorkPreference', '')
+
+
 
 skipbuttn();
+
 
