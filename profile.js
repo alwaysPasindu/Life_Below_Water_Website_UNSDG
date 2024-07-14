@@ -4,7 +4,7 @@ function textTo(nextButton, text, previousD1, nextD1, output, entered) {
 
         var enteredName = document.getElementById(text).value;
         if (enteredName == "") {
-            alert("Please enter your name!")
+            alert("Please enter your " + text)
         }
         else {
             document.getElementById('outputDiv').style.display = "block";
@@ -51,12 +51,15 @@ function next4BttnClick() {
         if (selectedValue) {
             document.getElementById("outputGnder").style.display = "block";
             document.getElementById('enteredGender').innerHTML = selectedValue;
+
+            document.getElementById('div1Gender').style.display = "none";
+            document.getElementById('div1PrivacyTerms').style.display = "block";
         } else {
             alert('No option selected');
+            return;
         }
 
-        document.getElementById('div1Gender').style.display = "none";
-        document.getElementById('div1PrivacyTerms').style.display = "block"
+
     }
 }
 
@@ -76,7 +79,13 @@ function next5BttnClick() {
         } else {
             alert('No option selected');
         }
+        document.getElementById('div1PrivacyTerms').style.display = "none";
+        document.getElementById('div1InspiredCause').style.display = "block";
     }
+}
+
+document.getElementById('next6').onclick = function () {
+    document.getElementById('line1').style.display = "block"
 }
 
 
@@ -84,7 +93,6 @@ function next5BttnClick() {
 
 
 
-skipbuttn();
 textTo('next1', 'name', 'div1Name', 'div1Surname', 'outputName', 'enteredName');
 
 textTo('next2', 'surname', 'div1Surname', 'div1Age', 'outputSurname', 'enteredSurname',);
@@ -94,4 +102,8 @@ textTo('next3', 'age', 'div1Age', 'div1Gender', 'outputAge', 'enteredAge');
 next4BttnClick();
 
 next5BttnClick();
+
+textTo('next6', 'inspiredCause', 'div1PrivacyTerms', 'div1InspiredCause', 'outputCourse', 'enterCourse')
+
+skipbuttn();
 
