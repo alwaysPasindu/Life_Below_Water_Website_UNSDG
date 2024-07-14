@@ -177,3 +177,39 @@ h2 {
     position: relative;
     top: 20px;
 }
+
+.line2 {
+    position: relative;
+    top: 50px;
+}
+
+
+
+/* .footer {
+
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    top: 200px;
+}
+
+.footerlist {
+
+    display: flex;
+    padding: 25px 3%;
+    backdrop-filter: blur(0px);
+}
+
+.footerlist a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 75px 0 90px;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all .70s ease;
+
+}
+
+.footerlist a:hover {
+    color: aqua;
+} */

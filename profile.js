@@ -19,6 +19,10 @@ function textTo(nextButton, text, previousD1, nextD1, output, entered) {
                 document.getElementById('line1').style.display = "block";
             }
 
+            if (nextButton == 'next10') {
+                document.getElementById('line2').style.display = "block";
+            }
+
 
         }
 
@@ -114,7 +118,13 @@ textTo('next7', 'previousExperience', 'div1PreviousExperience', 'div1Skill', 'ou
 
 textTo('next8', 'skill', 'div1Skill', 'div1WorkPreference', 'outputSkill', 'enterSkill')
 
-textTo('next9', 'workPreference', 'div1WorkPreference', '')
+textTo('next9', 'workPreference', 'div1WorkPreference', 'div1Education', 'outputEducation', 'enteredEducation')
+
+textTo('next10', 'education', 'div1Education', 'div1Degree', 'outputDgree', 'enteredDegree')
+
+textTo('next11', 'degrees', 'div1Degree', 'div1MarineConservation', 'outputMarineConservation', 'enteredMarineConservation')
+
+textTo('next12', 'marineConservation', 'div1MarineConservation',)
 
 
 
