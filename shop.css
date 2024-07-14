@@ -156,7 +156,7 @@ h3{
 /* Shopping Cart */
 
 .cartTab.active {
-    left: 0;
+    right: 0;
 }
 
 .cartTab{
@@ -166,8 +166,8 @@ h3{
     position: fixed;
     top: 18%;
     bottom: 0%;
-    right: 0%;
-    left: -100%;
+    right: -100%;
+    /* left: -100%; */
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: 0.3s;
@@ -194,6 +194,7 @@ h3{
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
+    padding: 5px;
 }
 .cartTab .button button:hover{
     background-color: rgb(14, 10, 223);
@@ -202,4 +203,61 @@ h3{
 	transition: 1s ease;
 	cursor: pointer;
 }
+.cartBox{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cartItemImage{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detailBox{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cartItemName{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #eeeaea;
+}
+.cartItemPrice{
+    font-weight: 500;
+    color: #eeeaea;
+}
+.cartItemQuantity{
+    border: 1px solid;
+    outline-color: rgb(20, 20, 20);
+    color: rgb(3, 3, 3);
+    width: 20%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.cartItemRemove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10%;
+    border-top: 1px solid;
+}
+.totalTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+.totalPrice{
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 20px;
+}
+
+
 
