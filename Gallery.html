@@ -26,12 +26,10 @@
                 <a href="profile.html" style="--i:4;">USER&nbsp;&nbsp;PROFILE <span></span></a>
                 <a href="team.html" style="--i:5;">ABOUT&nbsp;&nbsp;US <span></span></a>
                 <a href="Sitemap.html" style="--i:6;">SITE&nbsp;&nbsp;MAP <span></span></a>
-               
-        
+                
         </nav>
     </header>
     <section class="upperpart">
-
         <h1>Gallery</hl>
 
         <!-- <main class="mainPart"> -->
@@ -43,20 +41,143 @@
             <button class="button" data-filter=".SeaPol">Sea Polution</button>
         </div>
     </section>
-    <section id="contentpart">
-        <div1>
-            
-            <img src="images/Gallery/francesco-ungaro-MJ1Q7hHeGlA-unsplash.jpg" alt=" ">
-            <img src="images/Gallery/sunita-fan-9y0ODS51KCY-unsplash.jpg" alt=" ">
-            <img src="images/Gallery/tj-fitzsimmons-vQGwNgWl2Ew-unsplash.jpg" alt=" ">
-            <img src="images/Gallery/todd-cravens-lwACYK8ScmA-unsplash.jpg" alt=" ">
-            <img src="images/Gallery/yang-wewe-n6eblceUcnc-unsplash.jpg" alt=" ">
-            <img src="images/Gallery/christian-bisbo-johnsen-pP3q0pkd0_Y-unsplash.jpg" alt=" ">
-            <img src="images/Gallery/craig-lovelidge-5iiI5wVXY8M-unsplash.jpg" alt=" ">
-            <img src="images/Gallery/david-clode-EDfZ0Sjmp_w-unsplash.jpg" alt=" ">
-            <img src="images/Gallery/david-clode-HDVmdzQxAds-unsplash.jpg" alt=" ">
-        </div1>
 
-    </section>
+    
+<body>
+    <div class= "contentpart">
+            <img class="Thumbnail" id="myImg1" src="images/Gallery/todd-cravens-lwACYK8ScmA-unsplash.jpg" alt="Whale" style="width:100%;max-width:300px">
+ 
+            <!-- The Modal -->
+            <div id="myModal1" class="modal">
+                <span class="close">&times;</span>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    
+                    <div class="image-container">
+                        <img src="images/Gallery/sunita-fan-9y0ODS51KCY-unsplash.jpg" alt="Image" class="modal-image">
+                        <div class="description">      
+                            <h2>Marine Biodiversity</h2>
+                            <p>Coral reefs, known as the "rainforests of the sea," provide essential habitats for countless marine species, supporting livelihoods and biodiversity worldwide.</p>
+                            <p>Coral reefs, known as the "rainforests of the sea," provide essential habitats for countless marine species, supporting livelihoods and biodiversity worldwide.</p>
+                            <p>Coral reefs, known as the "rainforests of the sea," provide essential habitats for countless marine species, supporting livelihoods and biodiversity worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <img class="Thumbnail" id="myImg2" src="images/Gallery/yang-wewe-n6eblceUcnc-unsplash.jpg" alt="Whale" style="width:100%;max-width:300px">
+    
+            <!-- The Modal -->
+            <div id="myModal2" class="modal">
+                <span class="close">&times;</span>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    
+                    <div class="image-container">
+                        <img src="images/Gallery/yang-wewe-n6eblceUcnc-unsplash.jpg" alt="Image" class="modal-image">
+                        <div class="description">      
+                            <h2>Marine Biodiversity</h2>
+                            <p>Coral reefs, known as the "rainforests of the sea," provide essential habitats for countless marine species, supporting livelihoods and biodiversity worldwide.</p>
+                            <p>Coral reefs, known as the "rainforests of the sea," provide essential habitats for countless marine species, supporting livelihoods and biodiversity worldwide.</p>
+                            <p>Coral reefs, known as the "rainforests of the sea," provide essential habitats for countless marine species, supporting livelihoods and biodiversity worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <img class="Thumbnail" id="myImg3" src="images/Gallery/yang-wewe-n6eblceUcnc-unsplash.jpg" alt="Whale" style="width:100%;max-width:300px">
+    
+            <!-- The Modal -->
+            <div id="myModal3" class="modal">
+                <span class="close">&times;</span>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    
+                    <div class="image-container">
+                        <img src="images/Gallery/yang-wewe-n6eblceUcnc-unsplash.jpg" alt="Image" class="modal-image">
+                        <div class="description">      
+                            <h2>Marine Biodiversity</h2>
+                            <p>Coral reefs, known as the "rainforests of the sea," provide essential habitats for countless marine species, supporting livelihoods and biodiversity worldwide.</p>
+                            <p>Coral reefs, known as the "rainforests of the sea," provide essential habitats for countless marine species, supporting livelihoods and biodiversity worldwide.</p>
+                            <p>Coral reefs, known as the "rainforests of the sea," provide essential habitats for countless marine species, supporting livelihoods and biodiversity worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img class="Thumbnail" id="myImg7" src="images/Gallery/OceanPllution.jpg" alt="Whale" style="width:100%;max-width:300px">
+    
+            <!-- The Modal -->
+            <div id="myModal7" class="modal">
+                <span class="close">&times;</span>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    
+                    <div class="image-container">
+                        <img src="images/Gallery/OceanPllution.jpg" alt="Image" class="modal-image">
+                        <div class="description">      
+                            <h2>Polluted Oceans</h2>
+                            <p>An open-air garbage dump tarnishes the sapphire coast of Barrow, Alaska. Trash that makes its way into the oceans decomposes very slowly, 
+                                littering coastlines, polluting ground water, and harming marine creatures that mistake the trash for food.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<script>
+    // Get all elements with IDs starting with "myImg"
+    var images = document.querySelectorAll('[id^="myImg"]');
+    
+    // Iterate through each image and add click event listener
+    images.forEach(function(img) {
+        img.onclick = function() {
+            var modalId = 'myModal' + this.id.slice(-1);
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
+    });
+    
+    // Get all elements with class "close"
+    var closeButtons = document.getElementsByClassName("close");
+    
+    // Iterate through each close button and add click event listener
+    for (var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].onclick = function() {
+            var modal = this.closest('.modal');
+            modal.style.display = "none";
+        }
+    }
+    
+    // Close the modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
+        }
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+</script>
+
+    
+    <footer class="footer">
+
+        <nav class="footerlist">
+            <a href="#">Gayashi Nethmini</a>
+            <a href="#">Pasindu Dilshan</a>
+            <a href="#">Akila Lochana</a>
+            <a href="#">Nithika Thewjan</a>
+        </nav>
+
+
+    </footer>
+
+
 </body>
 </html>
