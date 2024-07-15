@@ -22,23 +22,20 @@
         <nav class="navbar">
 
                 <a href="index.html"  style="--i:0;">HOME <span></span></a>
-                <a href="Gallery.html" style="--i:1;">GALLERY <span></span></a>
-   
-
-
+                <a href="Gallery.html" style="--i:1;">GALLERY <span></span></a> 
                 <a href="shop.html"  class="active" style="--i:2;">SHOP <span></span></a>
                 <a href="Feedback.html" style="--i:3;">FEEDBACK <span></span></a>
                 <a href="profile.html" style="--i:4;">USER&nbsp;&nbsp;PROFILE <span></span></a>
                 <a href="team.html" style="--i:5;">ABOUT&nbsp;&nbsp;US <span></span></a>
                 <a href="Sitemap.html" style="--i:6;">SITE&nbsp;&nbsp;MAP <span></span></a>
-               
-        
-<main>
         </nav>
     </header>
+    <main>
 <br><br><br><br><br><br><br><br>
     <section>
+        <!-- <div class="backdrop"></div> -->
             <div class="shop_header">
+                <div id="shop"></div>
                 <div class="shop_name">
                 <h1>SHOP <sup>@</sup>LIFE BELOW WATER</h1>
                 </div>
@@ -49,7 +46,6 @@
                   <span>0</span>
                  </div>                  
             </div>
-
     <main>
          
         <div class="categories">
@@ -272,10 +268,10 @@
         <!-- <div class="listCart"> </div> -->
         <div class="cartContent">
             <div class="cartBox">
-                <img src="images/shop/Tshirt1.jpg" alt="tshirt1" class="cartItemImage">
+                <img src="product_image_url" alt="product_name" class="cartItemImage">
                 <div class="detailBox">
-                    <div class="cartItemName">Save a Turtle T-Shirt</div>
-                    <div class="cartItemPrice">$12</div>
+                    <div class="cartItemName">Product Name</div>
+                    <div class="cartItemPrice">$0</div>
                     <input type="number" value="1" class="cartItemQuantity">
                 </div>
                     <svg class="cartItemRemove" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -287,14 +283,137 @@
             <div class="totalTitle">Total</div>
             <div class="totalPrice">$0</div>
         </div>
-
-
         <div class="button">
             <button class="close">CLOSE</button>
-            <button class="checkout">CHECKOUT</button>
+            <a href="checkout.html"><button class="checkout">CHECKOUT</button>></a>
         </div>
      </div>
 
+    <!-- Check Out -->
+    <!-- <div class="checkoutTab">
+        <div class="checkoutHeading">
+            <div class="returnButton">
+                <a href="#shop"><h3>Keep Shopping</h3></a>                
+            </div>
+            <h1>CHECK OUT</h1>
+        </div>
+        <form>
+                <div class="ckeckoutContent">
+                    <div class="checkoutBox">
+                        <div class="personalDetails">
+                            <fieldset><legend>Personal Details</legend>
+                            <div class="details">
+                                <label>First Name: </label>
+                                <input type="text" name="fname" placeholder="Enter Your First Name">
+                            </div>
+                            <div class="details">
+                                <label>Last Name: </label>
+                                <input type="text" name="lname" placeholder="Enter Your last Name">
+                            </div>
+                            <div class="details">
+                                <label>Phone Number: </label>
+                                <input type="number" name="number" placeholder="07* *** ****">
+                            </div>
+                            <div class="details">
+                                <label>Country: </label>
+                                <select>
+                                <option selected value>Select Your Country</option>
+                                        <option>Australia</option>
+                                        <option>Bangladesh</option>
+                                        <option>Bhutan</option>
+                                        <option>Brazil</option>
+                                        <option>Brunei</option>
+                                        <option>Cambodia</option>
+                                        <option>Canada</option>
+                                        <option>China</option>
+                                        <option>Colombia</option>
+                                        <option>Croatia</option>
+                                        <option>Cuba</option>
+                                        <option>Cyprus</option>
+                                        <option>Czech Republic</option>
+                                        <option>Denmark</option>
+                                        <option>Egypt</option>
+                                        <option>Ethiopia</option>
+                                        <option>Fiji</option>
+                                        <option>Finland</option>
+                                        <option>France</option>
+                                        <option>Germany</option>
+                                        <option>Greece</option>
+                                        <option>Hungary</option>
+                                        <option>Iceland</option>
+                                        <option>India</option>
+                                        <option>Indonesia</option>
+                                        <option>Ireland</option>
+                                        <option>Israel</option>
+                                        <option>Italy</option>
+                                        <option>Japan</option>
+                                        <option>Sri Lanka</option>
+                                        <option>UK</option>
+                                        <option>USA</option>
+                                        <option>Zimbabwe</option>
+                                    </select>
+                            </div>
+                            <div class="details">
+                                <label>E-mail Address:</label>
+                                <input type="text" name="email" placeholder="name.iitno@iit.ac.lk">
+                            </div>
+                            </fieldset>                    
+                        </div>
+                        <div class="deliveryDetails">
+                            <fieldset>
+                                <legend>Delivery Details</legend>
+                                <div class="details">
+                                    <label>Delivery address:</label>
+                                    <input type="text" name="address">
+                                </div>
+                                <div class="details">
+                                    <label>City:</label>
+                                    <input type="text" name="city">
+                                </div>
+                                <div class="details">
+                                    <label>Postal Code:</label>
+                                    <input type="text" name="postalcode">
+                                </div>
+                                <div class="details">
+                                    <label>Special Note:</label>
+                                    <textarea name="note"></textarea>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend>Payment Details</legend>
+                                <div class="cardImages">
+                                    <img src="images/shop/visaCard.jpg">
+                                    <img src="images/shop/masterCard.jpg">
+                                    <img src="images/shop/americanexpressCard.jpg">                                    
+                                </div>
+                                <div class="details">
+                                    <label>Card Number:</label>
+                                    <input type="text" name="cardnumber">
+                                </div>
+                                <div class="details">
+                                    <label>Name on the card:</label>
+                                    <input type="text" name="cardname">
+                                </div>
+                                <div class="details">
+                                    <label>CVV:</label>
+                                    <input type="number" name="cardnumber">
+                                </div>
+                                <div class="details">
+                                    <label>Exp year:</label>
+                                    <input type="date" name="expdate">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="pay">
+                            <button type="button"><h3>PAY</h3></button>
+                        </div>
+                    </div>
+
+                </div>
+        </form>      
+    </div> -->
 
     <script src="shop.js"></script>
 </body> 
