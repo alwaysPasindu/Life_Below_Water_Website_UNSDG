@@ -78,7 +78,7 @@ h1{
     height: 250px;
     border: 1px;
     border-radius: 4px;
-    box-shadow: 0px 0px 4px 0px rgb(193, 193, 193);
+    box-shadow: 0px 0px 4px 0px rgb(133, 132, 132);
     cursor: pointer;
     margin-left: 20px;
     margin-bottom: 15px;
@@ -93,7 +93,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 } */
 
 .Thumbnail:hover {
-   transform: scale(1.02);
+   transform: scale(1.06);
+   
 }
 
 .modal {
@@ -111,14 +112,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .modal-content {
-    background-color: #fefefe ;
+    background-color: #fefefeef ;
     border-radius:25px;
-    margin: 11% auto; /* 15% from the top and centered */
+    margin: 10.5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
+    box-shadow: 0 0 3px 0 lightblue;
     width: 80%;
     height: auto; 
-    max-height:550px ;/* Could be more or less, depending on screen size */
+    max-height:530px ;/* Could be more or less, depending on screen size */
 }
 
 /* .image-container img{
@@ -173,7 +175,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .modal-image {
     max-width: 50%;
     height: auto;
-    max-height: 500px;
+    max-height: 480px;
     border-radius: 5px;
 }
 
@@ -181,8 +183,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
     margin-left: 50px;
     margin-right: 50px;
     max-width: 50%;
-    text-align: justify;
-  text-justify: inter-word;
 
 }
 
@@ -199,8 +199,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 /* The Close Button */
 .close {
   position: absolute;
-  top: 120px;
-  right: 35px;
+  top: 125px;
+  right: 40px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
