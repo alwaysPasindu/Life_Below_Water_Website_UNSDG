@@ -1,3 +1,30 @@
+let progress = 0;
+
+function updateProgress(step) {
+    switch (step) {
+        case 5:
+            progress = 25;
+            break;
+        case 9:
+            progress = 50;
+            break;
+        case 12:
+            progress = 75;
+            break;
+        case 15:
+            progress = 100;
+            break;
+        default:
+            return;
+    }
+
+    document.getElementById('fillProgress').style.width = progress + '%';
+    document.getElementById('progressText').innerText = `Profile completed ${progress}%`;
+}
+
+
+
+
 
 function textTo(nextButton, text, previousD1, nextD1, output, entered) {
     document.getElementById(nextButton).onclick = function () {
@@ -15,8 +42,11 @@ function textTo(nextButton, text, previousD1, nextD1, output, entered) {
             document.getElementById(output).style.display = "block";
             document.getElementById(entered).innerHTML = enteredName;
 
+
+
             if (nextButton == 'next6') {
                 document.getElementById('line1').style.display = "block";
+                updateProgress(5);
             }
 
             if (nextButton == 'next10') {
@@ -95,7 +125,6 @@ function next5BttnClick() {
 
     }
 }
-
 
 
 
