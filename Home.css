@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -32,7 +30,6 @@ body{
    
     border-bottom: 2px solid rgba(255, 255, 255, .2);
 }
-
 
 
 .header::before{
@@ -420,82 +417,3 @@ footer{
 
 
 
-
-/* .mainfooter{
-    padding: 30px;
-    justify-content: center;
-    display: flex;
-    backdrop-filter: blur(10px);
-}
-
-.footer a{
-    color: #fff;
-
-    text-decoration: none;
-    padding: 0 70px;
-    font-size: 20px;
-    font-weight: 800;
-    /* padding: 10px 20px; */
-
-
-
-/* .footer a:hover{
-    color: aqua;
-    transform: ;
-    transition: .3s;
-} */
-
- */
-
-
-
-
-
-
-
-
-/* .mission{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.missionimg{
-    margin: 9rem ;
-    margin-left: 40rem;
-    height: 300px;
-    width: 300px;
-    align-items: center;
-    border-radius: 35px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
-    transition: box-shadow 0.3s ease; 
-    
-}
-
-
-.missionheading{
-    margin: 20px;
-    color: white;
-    font-size: 50px;
-    font-weight: 705;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
-    transition: text-shadow 0.3s ease; 
-}
-
-
-.missioncontent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 80px;
-}
-
-.missioncontent p{
-   
-    color: white;
-    width: 600px;
-    font-size: 25px;
-    font-weight: 550;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1)
-/*  */
