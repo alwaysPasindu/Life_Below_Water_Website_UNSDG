@@ -41,12 +41,12 @@
     </header>
     <h1>USER PROFILE FORM</h1>
 
-    <div class="progress">
-        <div class="fillProgress"></div>
-        <span class="progressText">Profile completed 25%</span>
+    <div class="progressBar">
+        <div class="fillProgress" id="fillProgress"></div>
+        <span id="progressText">Profile completed 0%</span>
     </div>
 
-    <button class="start">START</button>
+    <!-- <button class="start">START</button> -->
 
 
     <div class="output" id="outputDiv" style="display: none;">
@@ -76,6 +76,7 @@
             <hr class="line2" id="line2" style="display: none;">
         </p>
 
+
         <p class="outputName" id="outputEducation" style="display: none;">Highest education level? <span
                 id="enteredEducation"></span></p>
 
@@ -87,6 +88,12 @@
             (Yes/No)
             <span id="enteredMarineConservation"></span>
         </p>
+
+        <p>
+            <hr class="line3" id="line3" style="display: none;">
+        </p>
+        <p class="outputName" id="outputGnder" style="display:none;">Gender: <span id="enteredGender"></span></p>
+
     </div>
 
 
@@ -112,7 +119,7 @@
                 <input type="text" name="name" id="surname" placeholder="Enter Your Surname">
             </form>
             <button class="next" id="next2">Next</button>
-            <button class="skip">Skip</button>
+            <button class="skip" id="skip2">Skip</button>
         </div>
     </div>
 
@@ -125,7 +132,7 @@
                 <input type="text" name="name" id="age" placeholder="Enter Your Age">
             </form>
             <button class="next" id="next3">Next</button>
-            <button class="skip">Skip</button>
+            <button class="skip" id="skip3">Skip</button>
         </div>
     </div>
 
@@ -148,7 +155,7 @@
 
             </form>
             <button class="next" id="next4">Next</button>
-            <button class="skip">Skip</button>
+            <button class="skip" id="skip4">Skip</button>
         </div>
     </div>
 
@@ -166,7 +173,7 @@
                 </div>
             </form>
             <button class="next" id="next5">Next</button>
-            <button class="skip">Skip</button>
+            <button class="skip" id="skip5">Skip</button>
         </div>
     </div>
 
@@ -245,7 +252,7 @@
 
     <div class="div1Name" id="div1Degree" style="display:none;">
         <div class="div2Name">
-            <h2>STEP 2 Volunteering task | Question 2/3</h2>
+            <h2>STEP 3 Qualifications | Question 2/3</h2>
             <form>
                 <label for="degrees" class="yourName">Relevant degrees/certifications?</label><br>
                 <input type="text" name="name" id="degrees">
@@ -257,7 +264,7 @@
 
     <div class="div1Name" id="div1MarineConservation" style="display:none;">
         <div class="div2Name">
-            <h2>STEP 2 Volunteering task | Question 3/3</h2>
+            <h2>STEP 3 Qualifications | Question 3/3</h2>
             <form>
                 <label for="marineConservation" class="yourName">Experience in marine conservation education?
                     (Yes/No)</label><br>
@@ -265,6 +272,47 @@
             </form>
             <button class="next" id="next12">Next</button>
             <button class="skip" id="skip12">Skip</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="div1Name" id="div1Week" style="display:none;">
+        <div class="div2Name">
+            <h2>STEP 3 Availability and Contact | Question 1/3</h2>
+            <form>
+                <label for="week" class="yourName">Available hours per week?</label><br>
+                <input type="text" name="name" id="week">
+            </form>
+            <button class="next" id="next13">Next</button>
+            <button class="skip" id="skip13">Skip</button>
+        </div>
+    </div>
+
+    <div class="div1Name" id="div1Days" style="display:none;">
+        <div class="div2Name">
+            <h2>STEP 3 Availability and Contact | Question 2/3</h2>
+            <form>
+                <label for="days" class="yourName">Preferred days/times?</label><br>
+                <input type="text" name="name" id="days">
+            </form>
+            <button class="next" id="next14">Next</button>
+            <button class="skip" id="skip14">Skip</button>
+        </div>
+    </div>
+
+    <div class="div1Name" id="div1Contact" style="display:none;">
+        <div class="div2Name">
+            <h2>STEP 3 Availability and Contact | Question 3/3</h2>
+            <form>
+                <label for="contact" class="yourName">Preferred contact method? (Email/Phone)</label><br>
+                <input type="text" name="name" id="contact">
+            </form>
+            <button class="next" id="next15">Next</button>
+            <button class="skip" id="skip1">Skip</button>
         </div>
     </div>
 
