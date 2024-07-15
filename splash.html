@@ -117,6 +117,31 @@
 			text-align: center;
 			padding-top: 0;
 		}	
+        .loader{
+        display: block;
+        position: relative;
+        height: 15px;
+        width: 20%;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        left: 40%;
+      }
+      .loader:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: #edeef3;
+        animation: 4s prog ease-in infinite;
+      }
+      
+      @keyframes prog {
+        to  {   width: 100%;}
+      }
+        
         		
 	</style>
 	<script>
@@ -144,6 +169,7 @@
                     <h1 id="mission1">OUR MISSION:</h1>
                     <p id="mission2">Conserve and sustainably use the oceans, seas and <br>marine resources for sustainable development.</p>
                 </div>
+                <span class="loader"></span>
                 <div>
                     <dl>
                         <dt>Group Members
