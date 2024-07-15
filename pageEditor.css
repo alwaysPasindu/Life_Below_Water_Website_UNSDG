@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    margin:110 auto;
+    min-height: 100vh;
+    background: url(images/Home/UPofileBG.jpg)no-repeat;
+    background-attachment:fixed ;
+    background-size: cover;
+    background-position: fixed;
+    width: 100vw; 
+    overflow-x: hidden;
+}
+
+
+.img1{
+    display: flex;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    width: 500px;
+    float: left;
+    margin: 5rem;
+}
+
+
+
+
+
+
+
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.home-content{
+    margin: 6rem 22rem 0 0 ;
+    max-width: 600px;
+    
+    color:whitesmoke;
+    text-align: right;
+
+}
+
+.home-content h1{
+    text-align: left;
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 35px;
+    color: yellow;
+    -webkit-text-stroke: .5px #fff;
+}
+
+.home-content p{
+    font-size: 25px;
+    font-weight: 550;
+}
+
+
+
+
+
+
+.break{
+    background: #070F2B;
+    height: px;
+    width: 100vw;
+}
+
+
+.main-content{
+    padding-top: 45px;
+    padding-bottom: 10px;
+    background: #031540;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.card-heading{
+    margin-bottom: 40px;
+}
+
+.card-heading h2{
+    text-align: center;
+    font-size: 35px;
+    color: #00abf0;
+    -webkit-text-stroke: .5px #fff;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 90px;
+    
+}
+
+.card{
+    width: 355px;
+    background-color: #070F2B;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.9);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+
+.card:hover{
+    transform: translateY(-25px);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h1{
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;   
+}
+
+.card-content{
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.card-content p{
+    margin-bottom: 20px;
+}
+
+.card-button{
+    display: inline;
+    background-color: #00abf0;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-bottom: -10px;
+    color: #031540;
+    transition: .5s;
+}
+
+.card-content a{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-content a:hover{
+    background: #00abf0;
+    color: #fff;
+    border-color: #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+}
+
+
+.footerContent{
+    background: #070F2B;
+    padding: 15px;
+}
+
+.footerContent p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.footerlink{
+    text-align: center;
+}
+
+.footerlink a{
+    color: #fff;
+    font-size: 35px;
+    padding-top: 15px;
+
+}
+
+.footerlink a:hover{
+    color: #00abf0;
+}
