@@ -108,6 +108,26 @@ function addProductToCart(title, price, productImage){
         updateTotal();
 }
 
+function addCartClicked(event) {
+    var button = event.target;
+    var shopProduct = button.closest(".product_details");
+    var title = shopProduct.querySelector(".product_name").innerText;
+    var price = shopProduct.querySelector(".product_price").innerText.replace("Price : $", "");
+    var productImage = shopProduct.querySelector(".shopItem img").src;
+
+    addProductToCart(title, price, productImage);
+
+    // Change button text to "Added to Cart"
+    button.innerText = "Added to Cart";
+    button.disabled = true; // Optional: Disable the button
+    button.style.backgroundColor = "#022b3a"; // Optional: Change background color
+    button.style.color = "#eeeaea"
+
+    updateTotal();
+}
+
+
+
 function updateTotal(){
     var cartContent = document.querySelector(".cartContent");
     var cartBoxes = cartContent.querySelectorAll(".cartBox");
@@ -137,18 +157,58 @@ function updateTotal(){
 
     document.querySelector(".totalPrice").innerText = "$" + total;
 }
-
-//checkout Tab
-
+var checkoutTabOpen = document.getElementById("checkoutPage");
 let checkout = document.querySelector(".checkout");
-let checkoutTab = document.querySelector(".checkoutTab");
-let checkoutClose = document.querySelector(".returnButton");
+var checkoutTabClose = document.querySelector(".closeCheckout");
+var backdrop = document.querySelector(".backdrop");
+var keepShopping = document.querySelector(".keepShopping");
 
 //open checkout
 checkout.onclick = () =>{
-    checkout.classList.add("active");
+
+    let total = document.getElementsByClassName('totalPrice')[0].innerText.replace(/[^0-9]/g, '')
+
+    if (total == 0) {
+        alert("You should add products to the cart first.")
+        return
+    }
+    checkoutTabOpen.classList.add("active");
+    backdrop.classList.add("show");
+    cartTab.classList.remove("active");
 };
+
 //close checkout
-checkoutClose.onclick = () =>{
-    checkout.classList.remove("active");
+checkoutTabClose.onclick = () =>{
+    checkoutTabOpen.classList.remove("active");
+    backdrop.classList.remove("show");
+};
+
+//close checkout
+keepShopping.onclick = () =>{
+    checkoutTabOpen.classList.remove("active");
+    backdrop.classList.remove("show");
+};
+
+document.querySelector('.pay').onclick = function() {
+    let name = document.getElementById('inputfname').value.toString().trim()
+    let phoneNo = document.getElementById('inputphone').value.toString().trim()
+    let email = document.getElementById('inputemail').value.toString().trim()
+
+    if(name == ''){
+        alert("You should enter your name.")
+        return
+    }
+    if(phoneNo.length < 6){
+        if(phoneNo == ''){
+            alert("You should enter your phone number.")
+        }
+        else{
+            alert("Your phone number is invalid.")
+            return
+        }
+    }
+
+    // If all validations pass, show success message and redirect
+    alert("Payment successfull!");
+    window.location.href = "shop.html"; // Redirect to the shop page (adjust the URL as necessary)
 };
