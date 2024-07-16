@@ -141,8 +141,8 @@ body{
 
 
 
-
-Breakpoints*/
+/* 
+Breakpoints */
 @media (max-width:992px){
     .header{
         padding: 1.3rem 5%;
@@ -316,10 +316,11 @@ h3{
 .button-a{
     background: #78E0F7;
     font-weight: 500;
-    margin: 1rem 0 0 70%;
+    margin: 1.4rem 0 0 60%;
     padding: 8px 8px;
     border-radius: 6px;
     border: 1px;
+    
 }
 
 .button-a:hover{
@@ -334,7 +335,7 @@ h3{
 
 .button-b{
     background:#03D39F ;
-    margin: 1rem 0 0 70%;
+    margin: 1.4rem 0 0 60%;
     padding: 8px 8px;
     border-radius: 6px;
     border: 1px;
@@ -354,7 +355,7 @@ h3{
 
 .button-c{
     background: #FF7675;
-    margin: 1rem 0 0 70%;
+    margin: 1.4rem 0 0 60%;
     padding: 8px 8px;
     border-radius: 6px;
     border: 1px;
