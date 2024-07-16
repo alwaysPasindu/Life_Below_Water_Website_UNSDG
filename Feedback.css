@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+
+
+main{
+    margin-top: 125px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 80px; 
+    
+}
+
+
+/* .form {
+    width: 50vw;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0.5, 0.9);
+}
+
+input{
+    color: black;
+}
+
+.heading{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.heading h1 {
+    color: white;
+    
+    font-size: 32px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+    letter-spacing: 1px;
+}
+
+
+
+.container-1 input[type="radio"]{
+    accent-color: #56E161;
+    height: 15px; 
+    width: 15px;
+}
+
+.container-2 input[type="radio"]{
+    accent-color: #56E161;
+    height: 15px; 
+    width: 15px;
+}
+
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    width: 45%;
+    color: black;
+    background-color: #56E161;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-group button:hover{
+    color: whitesmoke;
+    
+    
+}
+
+label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: none;
+}
+
+.input-control.error input {
+    border-color: none;
+}
+
+.input-control .error {
+    color: red;
+    font-size: 12px;
+    height: 13px;
+}
+
+.textarea-1{
+    width: 100%; 
+    height: 75px;
+    resize: none;
+}
+
+.rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2.9rem;
+	margin-bottom: 2rem;
+}
+.rating .star {
+	cursor: pointer;
+    color: aqua;
+}
+.rating .star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+.rating .star:hover {
+	transform: scale(1.1);
+}
+textarea {
+	width: 100%;
+	background: #F5F5F5;
+	padding: 1rem;
+	border-radius: .5rem;
+	color: black;
+	resize: none;
+	margin-bottom: .5rem;
+}
+ */
+
+
+
+
+
+
+.heading{
+    
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.form{
+    width: 35vw;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+    backdrop-filter: blur(2px);
+    color: aliceblue;
+    border-radius: 20px;
+    /* font-size: 12px; */
+    box-shadow: 0 5px 9px rgba(0, 0, 0.5, 0.9);
+    
+
+}
+
+
+#LabelText{
+    /* float: left;  */
+     text-align: left ;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+#username{
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+#email{
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+
+.container2{
+    font-size: 1.2rem;
+    
+}
+
+#y { 
+    font-weight: 600;
+}
+
+#n { 
+    font-weight: 600;
+}
+
+
+#Rate{
+    font-size: 1.7rem;
+}
+
+
+
+
+.rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2.9rem;
+	margin-bottom: 2rem;
+}
+.rating .star {
+	cursor: pointer;
+    color: aqua;
+}
+.rating .star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+
+
+
+.rating .star:hover {
+	transform: scale(1.1);
+}
+
+
+#opinion{
+    
+}
+
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    width: 20%;
+    color: white;
+    background-color: rgb(3, 123, 123);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-group button:hover{
+    color: black;
+}

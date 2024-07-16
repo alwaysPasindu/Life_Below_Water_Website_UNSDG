@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEEDBACK</title>
-    <!-- <link rel="stylesheet" href="Home.css"> -->
+    <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
      <link rel="stylesheet" href="Feedback.css">
 
     
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <a href="index.html" class="logo"><img src="images/Home/Sustainable_Development_Goal_14.png"  alt="LOGO" class="logo"></a> 
 
         <input type="checkbox" id="check">
@@ -32,24 +32,30 @@
                
         
         </nav>
-    </header> -->
+    </header>
 
 
+    <main>
 
-    <div class="form">
-        <form action="mailto:always.pasindu@gmail.com" id="form">
+
+        
+
+
+<div class="form">
+        <form action="mailto:always.pasindu@gmail.com" id="form" method="post" enctype="text/plain">
 
             <div class="heading"><h1>Leave us a Feedback</h1></div>
+            <br><br>
 
         <div class="input-field">
-            <label for="username">Name</label>br
-            <input type="text" id="username" placeholder="Enter your name">
+            <label for="username" id="LabelText">Name: </label><br>
+            <input type="text" id="username" placeholder=" Enter your name">
         </div>
-<br>
+<br><br>
 
         <div class="input-field">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Enter your name">
+            <label for="email" id="LabelText">Email: </label><br>
+            <input type="text" id="email" name="email" placeholder=" Enter your email">
 
 
         </div>
@@ -58,30 +64,33 @@
         <br><br>
 
         <div class="container1">
-            <label> Was this your first time visiting?</label><br><br>
-            <input type="radio" id="Y" name="first visit" required>
-            <label for="Yes">Yes</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="radio" id="N" name="first visit" required>
-            <label for="No">No</label>
+            <label>Was this is your first time visting ?</label><br><br>
+                        
+            <input type="radio" name="First-Visit" value="Yes" required id="y">
+            <label for="yes">Yes</label>
+            
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+            <input type="radio" name="First-Visit" value="No" id="n">
+            <label for="no">No</label>
 
 
         </div>
 <br><br>
         <div class="container2">
             <label> Was this website informative & user friendly?</label><br><br>
-            <input type="radio" id="Y" name="userfriendly" required>
+            <input type="radio" id="Y" name="User-friendly" required>
             <label for="Yes">Yes</label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="radio" id="N" name="userfriendly" required>
+            <input type="radio" id="N" name="User-friendly" required>
             <label for="No">No</label>
             <br><br>
 
-            <textarea name="reasonTextArea" id="reason" rows="5" cols="50" placeholder="Suggest any improvement (if 'No' is selected)"></textarea>
+            <textarea name="Suggestions" id="reason" rows="5" cols="50" placeholder="Suggest any improvement (if 'No' is selected)"></textarea>
         </div>
 
-<br><br>
-<label for="stars">Rate Us</label>
+<br>
+<label for="stars" id="Rate">Rate Us</label>
 <div class="rating">
     <input type="number" name="rating" hidden id="stars">
     <i class='bx bx-star star' style="--i: 0;"></i>
@@ -91,7 +100,7 @@
     <i class='bx bx-star star' style="--i: 4;"></i>
     
 </div>
-<textarea name="opinion" cols="30" rows="5" placeholder="Describe your experience..."></textarea>
+<textarea id="opinion" name="User-opinion" cols="30" rows="5" placeholder="Describe your experience..."></textarea>
        
 <br><br>
         
@@ -102,12 +111,18 @@
             <button type="reset" class="btn-cancel">Cancel</button>
         </div>
 
-        </form>
+        
 
 
 
     </div>
+ </form>
 
+
+
+    
+
+    </main>
 
 
 
