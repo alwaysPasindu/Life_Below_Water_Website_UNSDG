@@ -133,6 +133,9 @@ h3{
     text-align: center;
     color: #eeeaea;
   }
+  #footerPart{
+    padding-top: 5%;
+  }
 .shopItem{
     padding-top: 10px;
     padding-left: 10px;
