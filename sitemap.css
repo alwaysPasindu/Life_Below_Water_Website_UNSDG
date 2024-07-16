@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/* 
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 10px 2%;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+body{
+    background-image: url("Pics/Site Map/example01.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100vw; 
+    overflow-x:hidden;  
+}
+
+.img{
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    
+}
+
+.navlist{
+    display: flex;
+    margin-left: auto;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 65px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 3px solid white;
+}
+
+.navlist a.active {
+    border-bottom: 3px solid #56E161;
+    color: #56E161;
+    
+} */
+
+main{
+    margin-top: 150px;
+    margin-left: 35px;
+    margin-right: 55px;
+    margin-bottom: -350px;
+}
+
+.map{
+    width: 100%;
+    height: 75%;
+    margin-bottom:20px;
+    background-color: rgba(160, 157, 157, 0.161) ; 
+    border-radius: 10px ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    padding: 10px;
+    margin: 10px;
+}   
+
+h1{
+    font-size: 80px;
+    margin-top: 70px;
+    /* margin-left:50px; */
+    text-align: center;
+    color: #fff;
+    font-weight: 705;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    transition: text-shadow 0.3s ease;
+}
+
+h1:hover{
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.home:hover rect {
+    fill: white; 
+}
+
+.home:hover text {
+    fill: #29b635; 
+}
+
+a:hover rect {
+    fill: #29b635; 
+}
+
+a:hover text {
+    fill:white; 
+}
+
+/* footer{
+    position:static;
+    bottom: 0;
+    width: 100%;
+    margin-top: 380px;
+    
+} */
+
+/* .footerlist{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    padding: 25px 3%;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+.footerlist a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+
+}
+
+.footerlist a:hover{
+    color: #56E161;
+} */
+ 
