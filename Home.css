@@ -142,8 +142,8 @@ body{
 
 
 
-/*Breakpoints*/
-/* @media (max-width:992px){
+Breakpoints*/
+@media (max-width:992px){
     .header{
         padding: 1.3rem 5%;
 
@@ -214,7 +214,7 @@ body{
     }
     
 }
-     */
+    
 
 /* ///////////////////////////////////////////////////////////////////// */
 /*  */
