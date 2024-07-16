@@ -250,6 +250,28 @@ h2 {
 
 }
 
+.successful {
+    font-size: 50px;
+    margin-top: 200px;
+    color: wheat;
+    text-align: center;
+}
+
+.backHome {
+    position: absolute;
+    left: 620px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    width: 140px;
+    text-align: center;
+    cursor: pointer;
+    top: 450px;
+
+
+}
+
 
 /* .footer {
 

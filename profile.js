@@ -79,6 +79,21 @@ function skipbuttn(skip, previousdiv, nextdiv, previousoutput, nextoutput) {
         document.getElementById(nextdiv).style.display = "block";
         document.getElementById(previousoutput).style.display = "block";
         document.getElementById(nextoutput).style.display = "block";
+
+        if (skip == 'skip5') {
+            updateProgress(5);
+            document.getElementById('line1').style.display = "block";
+        }
+
+        if (skip == 'skip9') {
+            updateProgress(9);
+            document.getElementById('line1').style.display = "block";
+        }
+
+        if (skip == 'skip12') {
+            updateProgress(12);
+            document.getElementById('line1').style.display = "block";
+        }
     }
 }
 
@@ -146,15 +161,41 @@ function next15Clicked() {
         document.getElementById('edit').style.display = "block";
         document.getElementById('submit').style.display = "block";
         updateProgress(15);
+
     }
 }
+
+
 
 document.getElementById('edit').onclick = function () {
     document.getElementById('start').click();
     document.getElementById('outputDiv').style.display = "none";
+    document.getElementById('edit').style.display = "none";
+    document.getElementById('submit').style.display = "none";
+    document.getElementById('outputDiv').classList.remove('center');
+
+
+    // Hide all skip buttons
+    // var skipButtons = document.querySelectorAll('.skip');
+    // skipButtons.forEach(function (button) {
+    //     button.style.display = "none";
+    // });
+
     updateProgress(5);
 
 }
+document.getElementById('submit').onclick = function () {
+    document.getElementById('edit').style.display = "none";
+    document.getElementById('submit').style.display = "none";
+    document.getElementById('outputDiv').style.display = "none";
+    document.getElementById('successful').style.display = "block";
+    document.getElementById('backHome').style.display = "block";
+
+}
+
+document.getElementById('backHome').addEventListener('click', function () {
+    window.location.href = 'index.html';
+});
 
 
 
@@ -162,8 +203,6 @@ document.getElementById('edit').onclick = function () {
 textTo('next1', 'name', 'div1Name', 'div1Surname', 'outputName', 'enteredName');
 
 textTo('next2', 'surname', 'div1Surname', 'div1Gender', 'outputSurname', 'enteredSurname',);
-
-// textTo('next3', 'age', 'div1Age', 'div1Gender', 'outputAge', 'enteredAge');
 
 next3BttnClick();
 
