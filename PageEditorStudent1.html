@@ -5,21 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Editor stu1</title>
     <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        body{
+            background-image: url("images/page\ editor\ stu1/wallpaper.jpg");
+        }
+        .name{
+            font-size: 25px;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: italic;
+            top: 20%;
+            background-color: rgb(191, 218, 243);
+            color: rgb(3, 18, 39);
+        }
+        .name :hover{
+            background-color: rgb(3, 18, 39);
+            color: rgb(191, 218, 243);
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 1s ease;
+            border-radius: 10px;
+        }
+        .id{
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: aliceblue;
+        }
+        .role{
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: aliceblue;
+            font-style: italic;
+        }
+        .container{
+            position: relative;
+            top: 20px;
+            display: block; 
+            box-sizing: border-box;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            margin-left: 100px; 
+            margin-right: 100px;
+            margin-top: 30px;
+            margin-bottom: 70px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 20px rgba(238, 219, 219, 0.5);   
+            border-radius: 20px;   
+        }
+        .container h2{
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        .container h2:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
         img{
             width: 300px;
             height: 380px;
+            border-radius: 10px;
         }
-        body{
-            background-color:rgb(147, 181, 226);
+        img:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.5s ease;
+            border-radius: 50px;
+        }
+        .title{
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            font-size: 35px;
+            text-align: center;
+        }
+        .container2{
+            position: relative;
+            top: 20px;
+            display: block; 
+            box-sizing: border-box;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            margin-left: 100px; 
+            margin-right: 100px;
+            margin-top: 30px;
+            margin-bottom: 70px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(238, 219, 219, 0.5);   
+            border-radius: 20px; 
+        }
+        .pages{
+            position: relative;
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .pages h2{
+            font-size: 30px;
+        }
+        .pages h2:hover{
+            cursor: pointer;
+            transform: scale(0.9);
+            transition: 0.5s ease;  
+        }
+        .pages p{
+            font-size: 25px;
+        }
+        .pages a{
+            text-decoration: none;
+            color: aliceblue;
+            background-color: rgb(6, 34, 51);
+            width: 25px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        footer{
+            background-color: bisque;
+            color: rgb(9, 27, 44);
+            text-align: center;
+            font-size: 15px;
+        }
+        footer a{
+            text-decoration: none;
+            color: rgb(9, 27, 44);
+        }
+        footer a:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.5s ease;   
         }
     </style>
 </head>
 <body>
-    <h1>Gayashi Nethmini Ramanayake</h1>
-    <h2>IIT ID: 20232620</h2>
-    <h2>UOW ID: W2082258</h2>
-    <h2>Role : Student 2</h2>
-    <img src="images/page editor stu1/student1.jpg">
-    
+    <div class="container" id="top">
+        <div class="name">
+                <h1>GAYASHI NETHMINI RAMANAYAKE</h1>
+        </div>
+        <div class="id">
+            <h2>IIT ID: 20232620</h2>
+            <h2>UOW ID: W2082258</h2>
+        </div>
+        <div class="role">
+            <h2>Role : Student 2</h2>
+        </div>
+        <div class="image">
+            <img src="images/page editor stu1/student1.jpg">
+        </div>
+    </div>
+    <div class="title"> 
+        <h2>Following Pages Are Done By Me!</h2>
+    </div>
+    <div class="container2">
+        <div class="pages">
+            <h2>SPLASH SCREEN</h2>
+            <p>In Splash Page I have used HTML,CSS and Javascript and it includes all necessary informartions that are required to display and it will automatically redirect the Home Page after 4 seconds.</p>
+            <h2><a href="splash.html">Splash Screen</a></h2>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="pages">
+            <h2>SHOP</h2>
+            <p>I created Shopping Page including cart and checkout facilities. I used HTML, JavaScript and CSS for my website and some svg for my website designs and Checkout form and user inputs are validated using JavaScript</p>
+            <h2><a href="shop.html">Shop</a></h2>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="pages">
+            <h2>CONTENT PAGE</h2>
+            <p>I created the content page using HTML and CSS. And you can click buttons where it includes links to the bottom of the page for smooth navigation.</p>
+            <h2><a href="contentPageStudent1.html">Content Page</a></h2>
+        </div>
+    </div>
+
+    <footer>
+        <h3><a href="#top">Go to Up</a></h3>
+        <h2>page editor by Gayashi Ramanayake</h2> 
+    </footer>
 </body>
 </html>
