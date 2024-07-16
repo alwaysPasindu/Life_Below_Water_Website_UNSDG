@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEEDBACK</title>
-    <link rel="stylesheet" href="Home.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="Home.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <link rel="stylesheet" href="Feedback.css">
+
+    
 </head>
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <a href="index.html" class="logo"><img src="images/Home/Sustainable_Development_Goal_14.png"  alt="LOGO" class="logo"></a> 
 
         <input type="checkbox" id="check">
@@ -29,7 +32,84 @@
                
         
         </nav>
-    </header>
+    </header> -->
+
+
+
+    <div class="form">
+        <form action="mailto:always.pasindu@gmail.com" id="form">
+
+            <div class="heading"><h1>Leave us a Feedback</h1></div>
+
+        <div class="input-field">
+            <label for="username">Name</label>br
+            <input type="text" id="username" placeholder="Enter your name">
+        </div>
+<br>
+
+        <div class="input-field">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your name">
+
+
+        </div>
+
+
+        <br><br>
+
+        <div class="container1">
+            <label> Was this your first time visiting?</label><br><br>
+            <input type="radio" id="Y" name="first visit" required>
+            <label for="Yes">Yes</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="N" name="first visit" required>
+            <label for="No">No</label>
+
+
+        </div>
+<br><br>
+        <div class="container2">
+            <label> Was this website informative & user friendly?</label><br><br>
+            <input type="radio" id="Y" name="userfriendly" required>
+            <label for="Yes">Yes</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="N" name="userfriendly" required>
+            <label for="No">No</label>
+            <br><br>
+
+            <textarea name="reasonTextArea" id="reason" rows="5" cols="50" placeholder="Suggest any improvement (if 'No' is selected)"></textarea>
+        </div>
+
+<br><br>
+<label for="stars">Rate Us</label>
+<div class="rating">
+    <input type="number" name="rating" hidden id="stars">
+    <i class='bx bx-star star' style="--i: 0;"></i>
+    <i class='bx bx-star star' style="--i: 1;"></i>
+    <i class='bx bx-star star' style="--i: 2;"></i>
+    <i class='bx bx-star star' style="--i: 3;"></i>
+    <i class='bx bx-star star' style="--i: 4;"></i>
+    
+</div>
+<textarea name="opinion" cols="30" rows="5" placeholder="Describe your experience..."></textarea>
+       
+<br><br>
+        
+
+
+<div class="btn-group">
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="reset" class="btn-cancel">Cancel</button>
+        </div>
+
+        </form>
+
+
+
+    </div>
+
+
+
 
 
     <script src="Feedback.js"></script>

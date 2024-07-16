@@ -31,7 +31,7 @@ h1 {
 .fillProgress {
     width: 0;
     height: 30px;
-    background-color: #4caf50;
+    background-color: #4575c9;
     border-radius: 5px;
     transition: width 0.5s;
 }
@@ -208,9 +208,47 @@ h2 {
 
 .line2 {
     position: relative;
-    top: 50px;
+    top: 25px;
 }
 
+.line3 {
+    position: relative;
+    top: 25px;
+}
+
+.center {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.edit {
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left: 570px;
+    top: 300px;
+}
+
+.submit {
+    position: absolute;
+    left: 720px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    top: 300px;
+
+}
 
 
 /* .footer {
