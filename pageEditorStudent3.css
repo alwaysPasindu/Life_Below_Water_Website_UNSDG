@@ -69,7 +69,7 @@ img {
     font-size: 18px;
     margin-left: 10px;
     color: white;
-    font-family: 'Poppins', 'sans-serif'
+    font-family: sans-serif;
 }
 
 .pages a {
@@ -103,8 +103,14 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: rgb(253, 253, 253);
     font-size: 18px;
+}
+
+.topic {
+    color: white;
+    font-size: 50px;
+    text-align: center;
 }
 
 .fa {
@@ -141,20 +147,18 @@ h3 {
     color: white;
 }
 
-.goto {
-    margin-left: 240px;
+
+.goToUp {
+    margin-left: 190px;
+    font-size: 20px;
 }
 
-.goto h3 {
-    color: black;
-    font-size: 18px;
-}
-
-.goto a {
+.goToUp a {
+    color: white;
     text-decoration: none;
-    color: black;
 }
 
-.goto a:hover {
+.goToUp a:hover {
+    color: rgb(255, 167, 3);
     text-decoration: underline;
 }
