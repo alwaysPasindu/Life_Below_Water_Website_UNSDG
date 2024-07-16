@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/Home/BGPEd.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background: #006994;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 10rem;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.intro {
+    color: white;
+}
+
+.tip {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 5px solid #006994;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    width: 800px;
+}
+
+.tip h3 {
+    margin-top: 0;
+    color: wheat;
+
+}
+
+.tip p {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+}
+
+.involved {
+    color: white;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
