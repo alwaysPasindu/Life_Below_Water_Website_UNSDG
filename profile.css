@@ -31,7 +31,7 @@ h1 {
 .fillProgress {
     width: 0;
     height: 30px;
-    background-color: #4caf50;
+    background-color: #4575c9;
     border-radius: 5px;
     transition: width 0.5s;
 }
@@ -209,6 +209,11 @@ h2 {
 .line2 {
     position: relative;
     top: 50px;
+}
+
+.line3 {
+    position: relative;
+    top: 55px;
 }
 
 

@@ -44,13 +44,23 @@ function textTo(nextButton, text, previousD1, nextD1, output, entered) {
 
 
 
-            if (nextButton == 'next6') {
+            if (nextButton == 'next3') {
                 document.getElementById('line1').style.display = "block";
                 updateProgress(5);
             }
 
-            if (nextButton == 'next10') {
+            if (nextButton == 'next9') {
                 document.getElementById('line2').style.display = "block";
+                updateProgress(9);
+            }
+
+            if (nextButton == 'next12') {
+                document.getElementById('line3').style.display = "block";
+                updateProgress(12);
+            }
+
+            if (nextButton == 'next15') {
+                updateProgress(15);
             }
 
 
@@ -153,10 +163,13 @@ textTo('next10', 'education', 'div1Education', 'div1Degree', 'outputDgree', 'ent
 
 textTo('next11', 'degrees', 'div1Degree', 'div1MarineConservation', 'outputMarineConservation', 'enteredMarineConservation')
 
-textTo('next12', 'marineConservation', 'div1MarineConservation',)
+textTo('next12', 'marineConservation', 'div1MarineConservation', 'div1Week', 'outputWeek', 'enteredWeek')
 
+textTo('next13', 'week', 'div1Week', 'div1Days', 'outputDays', 'enteredDays')
 
+textTo('next14', 'days', 'div1Days', 'div1Contact', 'outputContact', 'enteredContact')
 
+textTo('next15', 'contact', 'div1Contact', 'outputDiv', 'outputContact', 'enteredContact')
 skipbuttn();
 
 
