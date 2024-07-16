@@ -13,9 +13,9 @@
         }
         .name{
             font-size: 25px;
-            font-family: "Playfair Display", serif;
+            font-family: "Raleway", sans-serif;
             font-optical-sizing: auto;
-            font-weight: 800;
+            font-weight: 400;
             font-style: italic;
             top: 20%;
             background-color: rgb(191, 218, 243);
@@ -52,8 +52,8 @@
             text-align: center;
             margin-left: 100px; 
             margin-right: 100px;
-            margin-top: 30px;
-            margin-bottom: 70px;
+            margin-top: 10px;
+            margin-bottom: 20px;
             backdrop-filter: blur(5px);
             box-shadow: 0 0 20px rgba(238, 219, 219, 0.5);   
             border-radius: 20px;   
@@ -70,13 +70,13 @@
         img{
             width: 300px;
             height: 380px;
-            border-radius: 10px;
+            border-radius: 5px;
         }
         img:hover{
             cursor: pointer;
             transform: scale(1.1);
             transition: 0.5s ease;
-            border-radius: 50px;
+            border-radius: 10px;
         }
         .title{
             color: aliceblue;
@@ -90,8 +90,8 @@
             top: 20px;
             display: block; 
             box-sizing: border-box;
-            padding-left: 60px;
-            padding-right: 60px;
+            padding-left: 40px;
+            padding-right: 40px;
             padding-top: 20px;
             padding-bottom: 20px;
             text-align: center;
@@ -147,16 +147,58 @@
         footer a{
             text-decoration: none;
             color: rgb(9, 27, 44);
+            font-size: 20px;
         }
         footer a:hover{
             cursor: pointer;
             transform: scale(1.1);
             transition: 0.5s ease;   
         }
+        .container svg{
+            position: relative;
+            right: 60%;
+            top: 10%;
+            color: rgb(0, 0, 0);
+            width: 40px;
+            height: 40px;
+            background-color: rgb(245, 232, 232);
+            padding: 10px;
+        }
+        .container a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .container svg:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        .logo{
+            position: relative;
+            left: 60%;
+            top: 10%;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(245, 232, 232);
+            padding: 10px;
+            border-radius: 2px;
+            margin: 2px;
+        }
+        #down{
+            position: relative;
+            left: 50%;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container" id="top">
+    <div class="container" >
+        <a class="down" id="down">Go Down</a>
+        <a href="index.html"> <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+        <img src="images/Home/Sustainable_Development_Goal_14.png" alt="LOGO" class="logo">
         <div class="name">
                 <h1>GAYASHI NETHMINI RAMANAYAKE</h1>
         </div>
@@ -188,7 +230,7 @@
             <a href="shop.html">Shop</a>
         </div>
     </div>
-    <div class="container2">
+    <div class="container2" class="div" id="div">
         <div class="pages">
             <h2>CONTENT PAGE</h2>
             <p>I created the content page using HTML and CSS. And you can click buttons where it includes links to the bottom of the page as well as links to the top of my content page for smooth navigation.</p>
@@ -197,8 +239,18 @@
     </div>
 
     <footer>
-        <h3><a href="#top">Go to Up</a></h3>
-        <h2>Page Editor by Gayashi Ramanayake</h2> 
+        <h3><a class="up" id="up">Go Up</a></h3>        
+        <h2>Page Edited by Gayashi Ramanayake</h2> 
     </footer>
+
+    <script>
+        document.getElementById("up").onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.getElementById("down").onclick = function() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
