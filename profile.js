@@ -136,7 +136,14 @@ function next5BttnClick() {
     }
 }
 
-
+function next15Clicked() {
+    document.getElementById('next15').onclick = function () {
+        document.getElementById('outputDiv').classList.add('center');
+        document.getElementById('div1Contact').style.display = "none";
+        document.getElementById('edit').style.display = "block";
+        document.getElementById('submit').style.display = "block";
+    }
+}
 
 
 
@@ -170,6 +177,8 @@ textTo('next13', 'week', 'div1Week', 'div1Days', 'outputDays', 'enteredDays')
 textTo('next14', 'days', 'div1Days', 'div1Contact', 'outputContact', 'enteredContact')
 
 textTo('next15', 'contact', 'div1Contact', 'outputDiv', 'outputContact', 'enteredContact')
+
+next15Clicked();
 skipbuttn();
 
 
