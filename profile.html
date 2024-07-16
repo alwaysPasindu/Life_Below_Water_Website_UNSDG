@@ -46,16 +46,17 @@
         <span id="progressText">Profile completed 0%</span>
     </div>
 
-    <!-- <button class="start">START</button> -->
+    <button class="start" id="start">START</button>
 
 
     <div class="output" id="outputDiv" style="display: none;">
         <p class="outputName" id="outputName" style="display:none;">Name: <span id="enteredName"></span></p>
         <p class="outputName" id="outputSurname" style="display:none;">Surname: <span id="enteredSurname"></span></p>
-        <p class="outputName" id="outputAge" style="display:none;">Age: <span id="enteredAge"></span></p>
+
         <p class="outputName" id="outputGnder" style="display:none;">Gender: <span id="enteredGender"></span></p>
         <p class="outputName" id="outputPrivacyTerms" style="display:none;">Agree with privacy terms: <span
                 id="enteredPrivacyTerms"></span></p>
+        <p class="outputName" id="outputAge" style="display:none;">Age: <span id="enteredAge"></span></p>
 
         <p>
             <hr class="line1" id="line1" style="display: none;">
@@ -69,6 +70,10 @@
 
         <p class="outputName" id="outputSkill" style="display: none;">Relevant skills/expertise? (e.g., Diving, Biology)
             <span id="enterSkill"></span>
+        </p>
+
+        <p class="outputName" id="outWorkPreference" style="display: none;">Work preference? (On-site/Online/Both)
+            <span id="enterWorkPreference"></span>
         </p>
 
 
@@ -103,7 +108,7 @@
 
 
 
-    <div class="div1Name" id="div1Name">
+    <div class="div1Name" id="div1Name" style="display:none;">
         <div class="div2Name">
             <h2>STEP 1 Personal details | Question 1/5</h2>
             <form>
@@ -129,7 +134,7 @@
     </div>
 
 
-    <div class="div1Name" id="div1Age" style="display:none;">
+    <!-- <div class="div1Name" id="div1Age" style="display:none;">
         <div class="div2Name">
             <h2>STEP 1 Personal details | Question 3/5</h2>
             <form>
@@ -139,7 +144,7 @@
             <button class="next" id="next3">Next</button>
             <button class="skip" id="skip3">Skip</button>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="div1Name" id="div1Gender" style="display:none;">
@@ -159,8 +164,8 @@
                 <label for="gender" class="yourName">Other</label>
 
             </form>
-            <button class="next" id="next4">Next</button>
-            <button class="skip" id="skip4">Skip</button>
+            <button class="next" id="next3">Next</button>
+            <button class="skip" id="skip3">Skip</button>
         </div>
     </div>
 
@@ -177,10 +182,23 @@
                     <label for="no">No</label>
                 </div>
             </form>
+            <button class="next" id="next4">Next</button>
+            <button class="skip" id="skip4">Skip</button>
+        </div>
+    </div>
+
+    <div class="div1Name" id="div1Age" style="display:none;">
+        <div class="div2Name">
+            <h2>STEP 1 Personal details | Question 3/5</h2>
+            <form>
+                <label for="Age" class="yourName">Your Age:</label><br>
+                <input type="text" name="name" id="age" placeholder="Enter Your Age">
+            </form>
             <button class="next" id="next5">Next</button>
             <button class="skip" id="skip5">Skip</button>
         </div>
     </div>
+
 
 
 
@@ -323,7 +341,7 @@
 
     <div class="lastButton" id="lastButton">
         <button class="edit" id="edit" style="display: none;">Edit</button>
-        <button class="submit" id="submit" style="display: none;">Submit</button>
+        <button class="submit" id="submit" style="display: none;"><a href="index.html"></a>Submit</button>
 
     </div>
 
