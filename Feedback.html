@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEEDBACK</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="Home.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <link rel="stylesheet" href="Feedback.css">
+
+    
 </head>
 <body>
     <header class="header">
@@ -30,6 +33,106 @@
         
         </nav>
     </header>
+
+
+    <main>
+
+
+        
+
+
+<div class="form">
+        <form action="mailto:always.pasindu@gmail.com" id="form" method="post" enctype="text/plain">
+
+            <div class="heading"><h1>Leave us a Feedback</h1></div>
+            <br><br>
+
+        <div class="input-field">
+            <label for="username" id="LabelText">Name: </label><br>
+            <input type="text" id="username" placeholder=" Enter your name">
+        </div>
+<br><br>
+
+        <div class="input-field">
+            <label for="email" id="LabelText">Email: </label><br>
+            <input type="email" id="email" name="email" placeholder=" Enter your email">
+
+
+        </div>
+
+
+        <br><br>
+
+        <div class="container1">
+            <label>Was this is your first time visting ?</label><br><br>
+                        
+            <input type="radio" name="First-Visit" value="Yes" required id="y">
+            <label for="yes">Yes</label>
+            
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+            <input type="radio" name="First-Visit" value="No" id="n">
+            <label for="no">No</label>
+
+
+        </div>
+<br><br>
+        <div class="container2">
+            <label> Was this website informative & user friendly?</label><br><br>
+            <input type="radio" id="Y" name="User-friendly" required>
+            <label for="Yes">Yes</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="N" name="User-friendly" required>
+            <label for="No">No</label>
+            <br><br>
+
+            <textarea name="Suggestions" id="reason" rows="5" cols="50" placeholder="Suggest any improvement (if 'No' is selected)"></textarea>
+        </div>
+
+<br>
+<label for="stars" id="Rate">Rate Us</label>
+<div class="rating">
+    <input type="number" name="rating" hidden id="stars">
+    <i class='bx bx-star star' style="--i: 0;"></i>
+    <i class='bx bx-star star' style="--i: 1;"></i>
+    <i class='bx bx-star star' style="--i: 2;"></i>
+    <i class='bx bx-star star' style="--i: 3;"></i>
+    <i class='bx bx-star star' style="--i: 4;"></i>
+    
+</div>
+<textarea id="opinion" name="User-opinion" cols="30" rows="5" placeholder="Describe your experience..."></textarea>
+       
+<br><br>
+        
+
+
+<div class="btn-group">
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="reset" class="btn-cancel">Cancel</button>
+        </div>
+
+        
+
+
+
+    </div>
+ </form>
+
+
+
+    
+
+    </main>
+
+    <footer class="footer">
+        <nav class="footerlist">
+            <a href="PageEditorStudent1.html">Gayashi Nethmini</a>
+            <a href="PageEditorStudent2.html">Pasindu Dilshan</a>
+            <a href="PageEditorStudent3.html">Akila Lochana</a>
+            <a href="PageEditorStudent4.html">Nithika Thewjan</a>
+        </nav>
+    </footer>
+
 
 
     <script src="Feedback.js"></script>

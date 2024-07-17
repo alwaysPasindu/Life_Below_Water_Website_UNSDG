@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor</title>
+    <link rel="stylesheet" href="pageEditor.css">
+    <style>
+                    *,
+            ::before,
+            ::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+            
+            .go-top-btn {
+            position: fixed;
+            bottom: 35px;
+            right: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 60px;
+            width: 60px;
+            background: #fff;
+            border: 3px solid #333;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            }
+
+            .go-top-btn img {
+            width: 50px;
+            height: 50px;
+            }
+    </style>
+</head>
+<body>
+
+
+    <section class="home">
+        <div class="home-image">
+            <img src="images/Home/TPB.svg" alt="my picture" class="img1">
+        </div>
+        <div class="home-content">
+            <h1>
+                Pasindu Dilshan
+            </h1>
+            <br>
+            <h3>
+                IIT ID : 20230294
+            </h3>
+            <h3>
+                UoW ID : W2083184
+            </h3>
+            <br>
+
+            <p>Role : Student 2</p>
+
+            
+        </div>
+    </section>
+
+
+    <div class="break"></div>
+
+    <section>
+        <div class="main-content">
+
+            <div class="card-heading">
+                <h2>The following pages were edited by me!</h2>
+            </div>
+
+
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="images/PageEditor/(10).jpg" alt="home">
+                    <div class="card-content">
+                        <h1>HOME</h1>
+                        <P>I designed a homepage using HTML and enhanced its appearance by adding CSS for hover effects and other stylings.<P>
+                        <br><a href="index.html" class="card-button" target="_blank">LINK TO HOME</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="images/PageEditor/(8).jpg" alt="feedback">
+                    <div class="card-content">
+                        <h1>FEEDBACK</h1>
+                        <P>I created a feedback page using HTML forms, CSS styling, and JavaScript. The user inputs are validated by using JavaScript.</P>
+                        <br><a href="feedback.html" class="card-button" target="_blank">LINK TO FEEDBACK</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="images/PageEditor/(9).jpg" alt="content">
+                    <div class="card-content">
+                        <h1>CONTENT</h1>
+                        <P>I created a content page with HTML and used CSS to enhance its appearance. I also added links to the contents for easy navigation.</P>
+                        <br><a href="ContentStudent2.html" class="card-button" target="_blank">LINK TO CONTENT</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="footerContent">
+                <p>Designed by @Pasindu Dilshan</p>
+                <button class="go-top-btn">
+                    <img src="images/PageEditor/arrow-up.png" alt="arrow up">
+                  </button>
+              
+                <script>
+                    const goTopBtn = document.querySelector('.go-top-btn');
+
+                        window.addEventListener('scroll', checkHeight)
+
+                        function checkHeight(){
+                        if(window.scrollY > 200) {
+                            goTopBtn.style.display = "flex"
+                        } else {
+                            goTopBtn.style.display = "none"
+                        }
+                        }
+
+                        goTopBtn.addEventListener('click', () => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                        })
+                        })
+                </script>
+                
+                <br>
+            </div>
+        </footer>
+    
+</body>
+</html>

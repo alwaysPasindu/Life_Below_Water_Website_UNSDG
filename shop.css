@@ -20,19 +20,34 @@ h1{
     text-align: center;
     font-family: "Playwrite HR Lijeva", cursive;
     font-optical-sizing: auto;
-    font-weight: 100;
     font-style: normal;
     font-size: 50px;
+    font-weight: bolder;
 }
 .cart_icon{
     position: absolute;
-    left: 90%
+    left: 90%;
 }
 .cart_icon:hover{
     transform: scale(1.2);
-	transition: 1.5s ease;
+	transition: 1s ease;
 	cursor: pointer;
     color: #299bc9;
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0,0, 0.5);
+    z-index: 1;
+    display: none;
+    opacity: 0;
+}
+.backdrop.show{
+    display: block;
+    opacity: 1;
 }
 .categories{
     display: flex;
@@ -79,10 +94,10 @@ h3{
     box-sizing: border-box;
     padding: 30px;
     text-align: center;
-    margin-left: 30px; 
-    margin-right: 20px;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-left: 25px; 
+    margin-right: 25px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 20px rgba(238, 219, 219, 0.5);   
     border-radius: 20px;   
@@ -118,6 +133,9 @@ h3{
     text-align: center;
     color: #eeeaea;
   }
+  #footerPart{
+    padding-top: 5%;
+  }
 .shopItem{
     padding-top: 10px;
     padding-left: 10px;
@@ -141,3 +159,355 @@ h3{
     margin-left: 5px;
 }
 
+/* Shopping Cart */
+
+.cartTab.active {
+    right: 0;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #4b4e52;
+    color: #eeeaea;
+    position: fixed;
+    top: 18%;
+    bottom: 0%;
+    right: -100%;
+    /* left: -100%; */
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transform: translate(0%);
+    transition: transform 5s ease-in-out;
+    overflow-y: scroll;
+
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0%;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cartTab h1:hover{
+    color: black;
+    transform: scale(1.1);
+	transition: 1s ease;
+}
+.cartTab .button{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .button button{
+    background-color: #299bc9;
+    color: #eeeaea;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    padding: 5px;
+}
+.cartTab .button button:hover{
+    background-color: rgb(14, 10, 223);
+    border-radius: 10px;
+    transform: scale(0.9);
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+.cartTab .button a{
+    text-decoration: none;
+    color: #eeeaea;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cartBox{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cartItemImage{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    padding: 5px;
+}
+.detailBox{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cartItemName{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #eeeaea;
+}
+.cartItemPrice{
+    font-weight: 500;
+    color: #eeeaea;
+}
+.cartItemQuantity{
+    border: 1px solid;
+    outline-color: rgb(20, 20, 20);
+    color: rgb(3, 3, 3);
+    width: 20%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.cartItemRemove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10%;
+    border-top: 1px solid;
+}
+.totalTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+.totalPrice{
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 20px;
+}
+
+/* checkout section */
+#checkoutPage{
+    display: none;
+}
+#checkoutPage.active{
+    display: block;
+}
+.returnButton{
+    box-sizing: border-box;
+    width: 60px;
+    height: 40px;
+    margin-top: 9%;
+    margin-left: 3%;
+    background-color: #eeeaea;
+}
+.returnButton h3{
+    color: #0a1a20;
+    font-size: 11px;
+}
+.returnButton :hover{
+    background-color: black;
+    color: #eeeaea;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+.returnButton a{
+    text-decoration: none;
+}
+.returnButton a:hover{
+    text-decoration: none;
+}
+.returnButton a:visited{
+    text-decoration: none;
+    color: #0a1a20;
+}
+.checkoutHeading{
+    display: inline-block;
+    background-color: #43535a;
+    width: 100%;
+}
+.checkoutTab{
+    width: 700px;
+    background-color: #89aedf;
+    color: #eeeaea;
+    position: fixed;
+    bottom: 0%;
+    top: 10%;
+    right:32%;
+    left: 28%;
+    display: block;
+    transform: translate(0%);
+    transition: transform 5s ease-in-out; 
+    overflow-y: scroll;
+    z-index: 2;
+}
+.checkoutTab h1{
+    padding: 10px;
+    /* margin-top: 5%; */
+    color: #fff7f7;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.checkoutTab h1:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+.checkoutTab .details{
+    display: block;
+    padding: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+.checkoutTab label{
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.checkoutTab input{
+    position: relative;
+    left: 15%;
+}
+.checkoutTab fieldset{
+    border-radius: 10px;
+    border: black solid;
+    width: 600px;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+legend{
+    font-size: 20px;
+    color: #c5e1ec;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #0a1a20;
+    padding: 5px;
+}
+.cardImages{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.pay{
+    margin: 5%;
+    margin-left: 2%;
+    width: 70px;
+    height: 30px;
+    left: 80%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.pay h3{
+    text-align: center;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.pay :hover{
+    background-color: #0a1a20;
+    color: #eeeaea;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+    border-radius: 10px;
+}
+.closeCheckout{
+    margin: 5%;
+    margin-right: 2%;
+    width: 70px;
+    height: 30px;
+    left: 45%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.closeCheckout h3{
+    text-align: center;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.closeCheckout :hover{
+    background-color: #0a1a20;
+    color: #eeeaea;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+    border-radius: 10px;
+}
+.checkoutPageButton{
+    display: flex;
+}
+#inputfname{
+    position: relative;
+    left: 15%;
+}
+#inputlname{
+    position: relative;
+    left: 15%;
+}
+#inputphone{
+    position: relative;
+    left: 10%;
+}
+#inputcountry{
+    position: relative;
+    left: 19%;
+}
+#inputemail{
+    position: relative;
+    left: 10%;
+}
+#inputaddress{
+    position: relative;
+    left: 9%;
+}
+#inputcity{
+    position: relative;
+    left: 25%;
+}
+#inputpostalcode{
+    position: relative;
+    left: 15%;
+}
+#inputnote{
+    position: relative;
+    left: 14%;
+}
+#inputcardNo{
+    position: relative;
+    left: 14%;
+}
+#inputcardName{
+    position: relative;
+    left: 9%;
+}
+#inputcvv{
+    position: relative;
+    left: 20%;
+}
+#inputexpYear{
+    position: relative;
+    left: 18%;
+}
+.orderSummary{
+    display: inline;
+    color: #0a1a20;
+}
+.orderItemImage {
+    width: 50px; 
+    height: auto; 
+    /* object-fit: cover;  */
+    margin-right: 10px; 
+}
+.orderTotal{
+    color: #0a1a20;
+    font-size: medium;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bolder;
+    background-color: #eeeaea;
+}
+.orderSummaryTitle{
+    font-size: medium;
+    background-color: rgb(246, 253, 255);
+    color: #0a1a20;
+    padding: 10px;
+}
