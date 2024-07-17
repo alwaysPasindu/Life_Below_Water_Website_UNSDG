@@ -1,10 +1,27 @@
-body {
+/* body {
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
 }
 
 h1 {
@@ -28,7 +45,8 @@ h1 {
     box-shadow: 0 0 30px rgb(164, 161, 161);
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 150px;
+    left: 50px;
     font-size: 20px;
 }
 
@@ -80,4 +98,9 @@ h1 {
 
 .work {
     font-size: 15px;
+}
+
+.footer {
+
+    margin-top: 250px;
 }

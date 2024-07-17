@@ -1,12 +1,18 @@
-body {
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
     /* background-image: url();
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover; */
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
 }
 
 h1 {
@@ -272,6 +278,9 @@ h2 {
 
 }
 
+.footer {
+    margin-top: 750px;
+}
 
 /* .footer {
 
