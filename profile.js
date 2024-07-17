@@ -175,12 +175,6 @@ document.getElementById('edit').onclick = function () {
     document.getElementById('outputDiv').classList.remove('center');
 
 
-    // Hide all skip buttons
-    // var skipButtons = document.querySelectorAll('.skip');
-    // skipButtons.forEach(function (button) {
-    //     button.style.display = "none";
-    // });
-
     updateProgress(5);
 
 }
