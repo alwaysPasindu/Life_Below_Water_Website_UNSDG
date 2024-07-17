@@ -487,3 +487,27 @@ legend{
     position: relative;
     left: 18%;
 }
+.orderSummary{
+    display: inline;
+    color: #0a1a20;
+}
+.orderItemImage {
+    width: 50px; 
+    height: auto; 
+    /* object-fit: cover;  */
+    margin-right: 10px; 
+}
+.orderTotal{
+    color: #0a1a20;
+    font-size: medium;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bolder;
+    background-color: #eeeaea;
+}
+.orderSummaryTitle{
+    font-size: medium;
+    background-color: rgb(246, 253, 255);
+    color: #0a1a20;
+    padding: 10px;
+}

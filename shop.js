@@ -119,14 +119,12 @@ function addCartClicked(event) {
 
     // Change button text to "Added to Cart"
     button.innerText = "Added to Cart";
-    button.disabled = true; // Optional: Disable the button
-    button.style.backgroundColor = "#022b3a"; // Optional: Change background color
+    button.disabled = true; // Disable the button
+    button.style.backgroundColor = "#022b3a"; 
     button.style.color = "#eeeaea"
 
     updateTotal();
 }
-
-
 
 function updateTotal(){
     var cartContent = document.querySelector(".cartContent");
@@ -157,6 +155,9 @@ function updateTotal(){
 
     document.querySelector(".totalPrice").innerText = "$" + total;
 }
+
+//CHECKOUT
+
 var checkoutTabOpen = document.getElementById("checkoutPage");
 let checkout = document.querySelector(".checkout");
 var checkoutTabClose = document.querySelector(".closeCheckout");
@@ -172,9 +173,11 @@ checkout.onclick = () =>{
         alert("You should add products to the cart first.")
         return
     }
+
     checkoutTabOpen.classList.add("active");
     backdrop.classList.add("show");
     cartTab.classList.remove("active");
+    displayOrderSummary();
 };
 
 //close checkout
@@ -189,26 +192,122 @@ keepShopping.onclick = () =>{
     backdrop.classList.remove("show");
 };
 
+// function validateEmail(email) {
+//     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for basic email validation
+//     return emailPattern.test(email);
+// }
+
 document.querySelector('.pay').onclick = function() {
     let name = document.getElementById('inputfname').value.toString().trim()
     let phoneNo = document.getElementById('inputphone').value.toString().trim()
     let email = document.getElementById('inputemail').value.toString().trim()
+    let deliverAddress = document.getElementById('inputaddress').value.toString().trim()
+    let city = document.getElementById('inputcity').value.toString().trim()
+    let postalCode = document.getElementById('inputpostalcode').value.toString().trim()
+    let cardNo = document.getElementById('inputcardNo').value.toString().trim()
+    let cardName = document.getElementById('inputcardName').value.toString().trim()
+    let cvv = document.getElementById('inputcvv').value.toString().trim()
+    let expdate = document.getElementById('inputexpYear').value.toString().trim()
 
-    if(name == ''){
-        alert("You should enter your name.")
-        return
-    }
-    if(phoneNo.length < 6){
-        if(phoneNo == ''){
-            alert("You should enter your phone number.")
-        }
-        else{
-            alert("Your phone number is invalid.")
+    var value = true;
+
+        if(name == ''){
+            alert("You should enter your name.")
+            value = false;
             return
         }
-    }
+        if(phoneNo.length != 10){
+            if(phoneNo == ''){
+                alert("You should enter your phone number.")
+                value = false;
+                return
+            }
+            else{
+                alert("Your phone number is invalid.")
+                value = false;
+                return
+            }
+        }
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // If all validations pass, show success message and redirect
-    alert("Payment successfull!");
-    window.location.href = "shop.html"; // Redirect to the shop page (adjust the URL as necessary)
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            value = false;
+            return;
+        }
+        
+        if( deliverAddress == ''){
+            alert("You should enter your delivery Address.");
+            value = false;
+            return;
+        }
+        if( city == ''){
+            alert("You should enter your city.");
+            value = false;
+            return;
+        }
+        if( postalCode == ''){
+            alert("You should enter your postalCode.");
+            value = false;
+            return;
+        }
+        if( cardNo == ''){
+            alert("You should enter your card Number.");
+            value = false;
+            return;
+        }
+        if( cardName == ''){
+            alert("You should enter your card Name.");
+            value = false;
+            return;
+        }
+        if( cvv == ''){
+            alert("You should enter your cvv (three digit on the back of the card).");
+            value = false;
+            return;
+        }
+        if( expdate == ''){
+            alert("You should enter the expired month of the card.");
+            value = false;
+            return;
+        }
+    
+        if (value = true){
+        // If all validations pass, show success message and redirect
+        alert("Payment successfull!");
+        window.location.href = "shop.html"; // Redirect to the shop page (adjust the URL as necessary)
+        }    
 };
+
+    let orderItemsContainer = document.querySelector(".orderItems");
+    let orderTotalPrice = document.querySelector(".orderTotalPrice");
+// Add this function to display the order summary
+function displayOrderSummary() {
+        orderItemsContainer.innerHTML = "";
+        let cartItems = document.querySelectorAll(".cartContent .cartBox");
+        let total = 0;
+
+        cartItems.forEach(item => {
+            let title = item.querySelector(".cartItemName").innerText;
+            let price = parseFloat(item.querySelector(".cartItemPrice").innerText.replace("$", ""));
+            let quantity = parseInt(item.querySelector(".cartItemQuantity").value);
+            let productImage = item.querySelector(".cartItemImage").src;
+
+            total += price * quantity;
+
+            let orderItem = document.createElement("div");
+            orderItem.classList.add("orderItem");
+            orderItem.innerHTML = `
+                <img src="${productImage}" alt="${title}" class="orderItemImage">
+                <div class="orderItemDetails">
+                    <span class="orderItemName">${title}</span>
+                    <span class="orderItemPrice">$${price.toFixed(2)}</span>
+                    <span class="orderItemQuantity">Quantity: ${quantity}</span>
+                </div>
+            `;
+            orderItemsContainer.appendChild(orderItem);
+        });
+
+        orderTotalPrice.innerText = `$${total.toFixed(2)}`;
+    }
+    
