@@ -74,7 +74,7 @@
     transition: 1s ease;
 }
 h3{    
-    font-family: "Bebas Neue", sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -106,7 +106,7 @@ h3{
     background-color: cadetblue;
     border-radius: 10px;
     border: #eeeaea;
-    font-family: "Playwrite HU", cursive;
+    font-family: sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: medium;
