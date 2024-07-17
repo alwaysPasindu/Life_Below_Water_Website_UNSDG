@@ -81,7 +81,7 @@ section{
 
 .texts h1{
     text-align: left;
-    font-weight: 150px;
+    font-weight: 350px;
     font-size: 55px;
     line-height: 1.2;
     color: #031540;
@@ -89,7 +89,7 @@ section{
 
 .texts h3{
     font-size: 35px;
-    color: rgb(0, 166, 255);
+    color: rgb(0, 77, 118);
     /* -webkit-text-stroke: .5px #fff; */
     font-weight: 60px;
 }
@@ -97,6 +97,7 @@ section{
 .texts p{
     font-size: 25px;
     font-weight: 550;
+    color: #005282;
 }
 
 
