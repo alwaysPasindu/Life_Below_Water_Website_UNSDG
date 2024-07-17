@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash screen</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
         body{
             text-align: center;
         }
@@ -22,7 +21,6 @@
 			height: 100%;
 			object-fit: cover;
 		}
-
         img{
     		height: 100px;
 			width: 100px;
@@ -37,22 +35,14 @@
         #title{
             color: #eaebee;
             font-weight: bolder;
-            font-size: 50px; 
-            font-family: Georgia, 'Times New Roman', Times, serif;            
+            font-size: 70px; 
+            font-family: sans-serif;            
         }
         #title:hover{
 			transform: scale(0.9);
 			transition: 1s ease;
 			cursor: pointer;
 		}
-        /* h1{
-            font-family: "Bebas Neue", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 35px;
-            color: aliceblue;
-        } */
-
         #mission1{
             color: #eaebee;
             font-weight: bolder; 
@@ -73,8 +63,7 @@
             width: 400px;
             height: 120px;
             margin-left: 40%;
-            padding: 15px;    
-                    
+            padding: 15px;  
         }
         dl dt{
             color: rgb(183, 233, 245);
@@ -96,8 +85,7 @@
             width: 30px;
             height: 20px;
             padding: 8px;
-            margin: 30px;   
-            /* background-color: rgb(2, 13, 77);   */
+            margin: 30px;
             border-radius: 10px;        
         }
         a:visited{
@@ -126,28 +114,28 @@
         border-radius: 10px;
         overflow: hidden;
         left: 40%;
-      }
-      .loader:after{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 0;
-        background: #edeef3;
-        animation: 4s prog ease-in infinite;
-      }
-      
-      @keyframes prog {
-        to  {   width: 100%;}
-      }
+        }
+        .loader:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            background: #edeef3;
+            animation: 4s prog ease-in infinite;
+        }
+        
+        @keyframes prog {
+            to  {   width: 100%;}
+        }
         
         		
 	</style>
 	<script>
 		setTimeout(function() {
 			window.location.href = 'index.html';
-            // MainScreen.style.top = '-100vh';
+            // will automatically redirect to the home page after 4 seconds
 		}, 4000);
 	</script>
 </head>
