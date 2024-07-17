@@ -1,3 +1,142 @@
-body{
-    background-image: url("images/content\ page\ student\ 1/wallpaper2.jpg");
+.heading{
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 30px;
+}
+.heading :hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background-color: rgb(203, 205, 209);
+    color: rgb(18, 30, 56);
+}
+.contentContainer{
+    margin-top: 10px;
+    position: relative;
+    display: block; 
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(238, 219, 219, 0.5);   
+    border-radius: 20px;    
+    color: aliceblue; 
+    font-weight: bold;
+}
+.contentContainer p{
+    padding: 10px;
+}
+.introduction{
+    margin-top: 10px;
+    display: inline;
+    position: relative;
+    font-size: larger;
+
+}
+.content1{
+    margin-top: 10px;
+    position: relative;
+    display: block; 
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(238, 219, 219, 0.5);  
+    border-radius: 20px; 
+    color: aliceblue;
+    background-color: rgb(7, 36, 49);
+}
+.content2{
+    margin-top: 10px;
+    position: relative;
+    display: block; 
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(238, 219, 219, 0.5);  
+    border-radius: 20px; 
+    color: aliceblue;
+    background-color: rgb(7, 36, 49);
+}
+.content3{
+    margin-top: 10px;
+    position: relative;
+    display: block; 
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(238, 219, 219, 0.5);  
+    border-radius: 20px; 
+    color: aliceblue;
+    background-color: rgb(7, 36, 49);
+}
+div{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+img{
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    background-color: aliceblue;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background-color: rgb(76, 84, 102);
+}
+h2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background-color: white;
+    color: black;
+}
+.footer{
+    position: relative;
+    bottom: 0%;    
 }
