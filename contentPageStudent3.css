@@ -17,6 +17,14 @@ header {
     text-align: center;
 }
 
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 15px;
+    left: 200px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
 nav {
     background: #333;
     color: white;
@@ -50,6 +58,7 @@ main {
 h2 {
     text-align: center;
     color: white;
+    font-size: 50px;
 }
 
 .intro {
