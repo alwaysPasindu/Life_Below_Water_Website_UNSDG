@@ -1,40 +1,4 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-.about{
-    width: 100%;
-    min-height: 100%;
-    background: rgb(241, 241, 241);
-    display: flex;
-    align-items: center;
-    gap: 7em;
-    padding: 30px 12% 0;
-}
-.texts{
-    max-width:100%;
-}
-.texts h3{
-    font-size: 45px;
-}
-.texts h1{
-    font-size: 62px;
-    line-height: 1.2;
-}
-.img{
-    border-radius: 50%;
-    width: 50px;
-}
-::-webkit-scrollbar{
-    background-color: orangered;
-}
-::-webkit-scrollbar-track{
-    background-color: rgba(0, 0, 0, 0.6);
-} */
+
 
 *{
     margin: 0;
@@ -45,11 +9,11 @@
 
 .backToHome {
     position: absolute;
-    top: 80px;
-    left: 40px;
+    top: 60px;
+    left: 35px;
     padding: 8px;
     border-radius: 10px;
-    background-color: rgb(33, 33, 42, 0.9);
+    background-color: rgba(0, 82, 100, 0.9);
     color: white;
     font-weight: 600;
     
@@ -67,7 +31,7 @@ section{
     
 }
 .about{
-    background-color: #fff3e3;
+    background-color: #bbeeff;
     width: 100%;
     height: 600px;
 }
@@ -156,14 +120,14 @@ section{
 }
 
 .card-heading{
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+   
 }
 
 .card-heading h2{
     text-align: center;
     font-size: 35px;
-    color: #00abf0;
-    -webkit-text-stroke: .5px #fff;
+    color: #ffffff;
 }
 
 .card-container{
@@ -177,7 +141,7 @@ section{
 
 .card{
     width: auto;
-    max-width: 350px;
+    max-width: 340px;
     background-color: #1f74b9;
     /* border-radius: 10px; */
     
@@ -186,8 +150,8 @@ section{
 }
 
 .card:hover{
-    transform: scale(1.02);
-    box-shadow: 0 4px 5px rgba(0, 0, 0.5, 0.9);
+   
+    box-shadow: 0 0px 6px rgba(0, 0, 0.5, 0.9);
 }
 
 .card img{
@@ -195,12 +159,26 @@ section{
     height: auto;
     object-fit: cover;
 }
-
-.card-container .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+.image_container {
+    position: relative;
+    text-align: left;
+    /* background-color: rgba(210, 210, 210, 0.485); */
+    color: white;
   }
+
+.bottom-left {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    font-size:30px;
+    font-weight: bold;
+    
+  }
+.backgroundclr{
+    height: 100%;
+    width: 100%;
+    background-color: #d93f3f;
+}
 
 .card-content{
     padding: 30px;
@@ -227,11 +205,11 @@ section{
 
 .card-button{
     display: inline;
-    background-color: #00abf0;
+    background-color: #0192ba;
     border-radius: 5px;
     padding: 8px 16px;
-    margin-bottom: -10px;
-    color: #031540;
+    margin-bottom: 10px;
+    color: #ffffff;
     transition: .5s;
 }
 
