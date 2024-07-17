@@ -6,35 +6,7 @@
     <title>Page Editor</title>
     <link rel="stylesheet" href="PageEditorStudent4.css">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <style>
-                    *,
-            ::before,
-            ::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            }
-            
-            .go-top-btn {
-            position: fixed;
-            bottom: 35px;
-            right: 35px;
-            border-radius: 50%;
-            cursor: pointer;
-            height: 60px;
-            width: 60px;
-            background: #fff;
-            border: 3px solid #333;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            }
-
-            .go-top-btn img {
-            width: 50px;
-            height: 50px;
-            }
-    </style> -->
+    
 </head>
 <body>
     <button class="backToHome" id="backToHome">Back To Home</button>
@@ -71,8 +43,11 @@
             <div class="card-container">
 
                 <div class="card">
-                    <img src="images/PageEditor/(10).jpg" alt="home">
-                    <h1 class = "card name">Gallery Page</h1>
+                    <img src="images/PageEditor4/Gallery.png" alt="home">
+                    <h1 class = ""></h1>
+                    <div class="card name">
+                        <h2>Gallery Page</h2>
+                    </div>
                     <div class="card-content">
                         
                         <P>I designed the galley page using HTML5. I used CSS to enhance the appearance and animations
@@ -113,9 +88,9 @@
 
         <footer>
             <div class="footerContent">
-                <p>Designed by @Pasindu Dilshan</p>
+                <p>Designed by Nithika Thewjan Wickramasinghe</p>
                 <button class="go-top-btn">
-                    <img src="images/PageEditor/arrow-up.png" alt="arrow up">
+                    <img src="images/PageEditor4/Scroll_Up_Button.png" alt="arrow up">
                   </button>
               
                 <script>
@@ -137,11 +112,16 @@
                             behavior: "smooth"
                         })
                         })
+                        document.getElementById("backToHome").addEventListener("click", function () {
+                window.location.href = "index.html";
+            });
                 </script>
                 
                 <br>
             </div>
         </footer>
+
+    
     
 </body>
 </html>

@@ -55,7 +55,7 @@
     
 }
 .backToHome:hover{
-    box-shadow: 0 0 30px rgba(129, 108, 108, 0.5);
+    box-shadow: 0 0 3px rgba(129, 108, 108, 0.5);
 }
 
 
@@ -179,7 +179,7 @@ section{
     width: auto;
     max-width: 350px;
     background-color: #1f74b9;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     
     overflow: hidden;
     transition: transform 0.4s ease;
@@ -196,11 +196,19 @@ section{
     object-fit: cover;
 }
 
+.card-container .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
 .card-content{
     padding: 30px;
 }
 
 .card name{
+    position: absolute;
+    margin-bottom: 30px;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;   
@@ -266,4 +274,31 @@ section{
 
 .footerlink a:hover{
     color: #00abf0;
+}
+
+::before,
+::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.go-top-btn {
+position: fixed;
+bottom: 35px;
+right: 35px;
+border-radius: 50%;
+cursor: pointer;
+height: 60px;
+width: 60px;
+
+
+display: none;
+justify-content: center;
+align-items: center;
+}
+
+.go-top-btn img {
+width: 180px;
+/* height: 50px; */
 }
