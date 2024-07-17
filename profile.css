@@ -238,13 +238,13 @@ h2 {
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left: 600px;
+    left: 595px;
     top: 220px;
 }
 
 .submit {
     position: absolute;
-    left: 750px;
+    left: 745px;
     font-size: 18px;
     border-radius: 10px;
     font-weight: bold;
