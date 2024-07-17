@@ -13,6 +13,18 @@ body {
 
 }
 
+.backToHome {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(33, 33, 42, 0.9);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 0 30px rgba(129, 108, 108, 0.5);
+}
+
 img {
     width: 400px;
     margin-top: 50px;
