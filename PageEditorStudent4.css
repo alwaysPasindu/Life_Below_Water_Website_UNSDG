@@ -43,35 +43,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-body{
-    margin:110 auto;
-    min-height: 100vh;
-    background: url(images/Home/UPofileBG.jpg)no-repeat;
-    background-attachment:fixed ;
-    background-size: cover;
-    background-position: fixed;
-    width: 100vw; 
-    overflow-x: hidden;
+.backToHome {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(33, 33, 42, 0.9);
+    color: white;
+    font-weight: 600;
+    
 }
-
-
-.img1{
-    display: flex;
-    padding-top: 4rem;
-    padding-right: 2rem;
-    width: 500px;
-    /* height: 500px; */
-    float: right;
-    margin: 5rem;
-    border-radius: 50%;
+.backToHome:hover{
+    box-shadow: 0 0 30px rgba(129, 108, 108, 0.5);
 }
-
-
-
-
-
-
 
 
 
@@ -82,13 +67,49 @@ section{
     
 }
 .about{
-    background-color: #5b5b5b6f;
+    background-color: #fff3e3;
+    width: 100%;
+    height: 600px;
+}
+
+.img1{
+    /* display: flex; */
+    position: relative;
+    z-index: 10;
+    padding-top: 20px;
+    padding-right: 80px;
+    width: 400px;
+    
+    float: right;
+    margin: 5rem;
+    border-radius: 20px ;
+}
+
+.backbox{
+    /* display: flex;       
+    padding-top: 4rem;
+    padding-right: 50px;
+    width: 400px;
+    height: 600px;
+    float: right;
+    margin: 5rem;
+    background-color: rgba(0, 0, 0, 0.144); */
+    width:100%;
+    height: 100px;
+    padding-top: 100px;
+    margin-top: 500px;
+    background-color: #031540;
+    position: absolute;
+    /* bottom: -.75rem; */
+    /* right: —.75rem; */
+    border:4px solid ;
+    z-index :5;
 }
 
 .texts{
     /* margin: 6rem 22rem 0 0 ; */
     max-width: 800px;
-    margin-left: 100px;
+    margin-left: 200px;
     color:whitesmoke;
     text-align: left;
 
@@ -96,14 +117,17 @@ section{
 
 .texts h1{
     text-align: left;
+    font-weight: 150px;
     font-size: 55px;
     line-height: 1.2;
+    color: #031540;
 }
 
 .texts h3{
     font-size: 35px;
     color: rgb(0, 166, 255);
-    -webkit-text-stroke: .5px #fff;
+    /* -webkit-text-stroke: .5px #fff; */
+    font-weight: 60px;
 }
 
 .texts p{
@@ -117,8 +141,8 @@ section{
 
 
 .break{
-    background: #070F2B;
-    height: px;
+    background: #ffffff;
+    height: 20px;
     width: 100vw;
 }
 
