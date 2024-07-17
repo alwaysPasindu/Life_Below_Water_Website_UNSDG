@@ -13,6 +13,8 @@
 
 <body>
 
+    <button class="backToHome" id="backToHome">Back To Home</button>
+
     <img src="images/team members imgs/photo_2024-06-14_21-17-11.jpg" alt="My photo">
     <div class="user" id="top">
         <div class="details">
@@ -69,6 +71,13 @@
             <h3><a href="#top">Go to Top</a></h3>
         </div>
     </div>
+
+
+    <script>
+        document.getElementById("backToHome").addEventListener("click", function () {
+            window.location.href = "index.html"; // Replace "index.html" with the URL of your home page
+        });
+    </script>
 
 </body>
 

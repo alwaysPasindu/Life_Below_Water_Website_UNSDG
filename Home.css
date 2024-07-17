@@ -145,7 +145,7 @@ body{
 Breakpoints */
 @media (max-width:992px){
     .header{
-        padding: 1.3rem 5%;
+        padding: 1.3rem 1.3rem;
 
     }
 }
