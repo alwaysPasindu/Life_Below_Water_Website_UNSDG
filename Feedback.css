@@ -3,22 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-
 }
-
-
 
 main{
     margin-top: 125px;
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 80px; 
-    
 }
 
-
 .heading{
-    
     font-size: 1.3rem;
     text-align: center;
 }
@@ -28,102 +22,64 @@ main{
     margin: 20vh auto 0 auto;
     padding: 20px;
     text-align: center;
-    
     backdrop-filter: blur(2px);
     color: aliceblue;
     border-radius: 20px;
-    /* font-size: 12px; */
     box-shadow: 0 5px 9px rgba(0, 0, 0.5, 0.9);
-    
 }
 
-
 #LabelText{
-    /* float: left;  */
-     text-align: left ;
+    text-align: left;
     font-size: 1.4rem;
     font-weight: 700;
 }
 
-
-#username{
+#username, #email {
     height: 35px;
     border-radius: 5px;
     font-weight: 500;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-#email{
-    height: 35px;
-    border-radius: 5px;
-    font-weight: 500;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
 
 .input-field {
     display: flex;
     flex-direction: column;
 }
 
-
-.container1 {
+.container1, .container2 {
     font-size: 1.2rem;
     font-weight: 600;
-    
 }
 
-.container2{
-    font-size: 1.2rem;
-    
-}
-
-#Y { 
+#Y, #N { 
     font-weight: 600;
 }
 
-#N { 
-    font-weight: 600;
-}
-
-
-#Rate{
+#Rate {
     font-size: 1.7rem;
 }
 
-
-
-
 .rating {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	grid-gap: .5rem;
-	font-size: 2.9rem;
-	margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2.9rem;
+    margin-bottom: 2rem;
 }
+
 .rating .star {
-	cursor: pointer;
+    cursor: pointer;
+    color: grey;
+}
+
+.rating .star.selected {
     color: aqua;
 }
-.rating .star.active {
-	opacity: 0;
-	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
-}
-
-
-
 
 .rating .star:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
-
-
-#opinion{
-
-}
-
 
 button {
     padding: 10px;
@@ -137,11 +93,12 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .btn-group {
     display: flex;
     justify-content: space-evenly;
 }
 
-.btn-group button:hover{
+.btn-group button:hover {
     color: black;
 }

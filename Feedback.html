@@ -6,9 +6,7 @@
     <title>Feedback</title>
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-     <link rel="stylesheet" href="Feedback.css">
-
-    
+    <link rel="stylesheet" href="Feedback.css">
 </head>
 <body>
     <header class="header">
@@ -18,111 +16,97 @@
         <label for="check" class="icons">
             <i class='bx bx-menu' id="close-icon"></i>
             <i class='bx bx-x' id="menu-icon"></i>
-
         </label>
         <nav class="navbar">
-
-                <a href="Home.html" style="--i:0;">HOME <span></span></a>
-                <a href="Gallery.html" style="--i:1;">GALLERY <span></span></a>
-                <a href="shop.html" style="--i:2;">SHOP <span></span></a>
-                <a href="Feedback.html" class="active" style="--i:3;">FEEDBACK <span></span></a>
-                <a href="profile.html" style="--i:4;">USER&nbsp;&nbsp;PROFILE <span></span></a>
-                <a href="team.html" style="--i:5;">ABOUT&nbsp;&nbsp;US <span></span></a>
-                <a href="Sitemap.html" style="--i:6;">SITE&nbsp;&nbsp;MAP <span></span></a>
-               
-        
+            <a href="Home.html" style="--i:0;">HOME <span></span></a>
+            <a href="Gallery.html" style="--i:1;">GALLERY <span></span></a>
+            <a href="shop.html" style="--i:2;">SHOP <span></span></a>
+            <a href="Feedback.html" class="active" style="--i:3;">FEEDBACK <span></span></a>
+            <a href="profile.html" style="--i:4;">USER&nbsp;&nbsp;PROFILE <span></span></a>
+            <a href="team.html" style="--i:5;">ABOUT&nbsp;&nbsp;US <span></span></a>
+            <a href="Sitemap.html" style="--i:6;">SITE&nbsp;&nbsp;MAP <span></span></a>
         </nav>
     </header>
 
-
     <main>
-
-
-        
-
-
-<div class="form">
-        <form action="mailto:always.pasindu@gmail.com" id="form" method="post" enctype="text/plain">
-
-            <div class="heading"><h1>Leave us a Feedback</h1></div>
-            <br><br>
-
-        <div class="input-field">
-            <label for="username" id="LabelText">Name: </label><br>
-            <input type="text" id="username" placeholder=" Enter your name">
+        <div class="form">
+            <form action="mailto:always.pasindu@gmail.com" id="form" method="post" enctype="text/plain">
+                <div class="heading"><h2>Leave us a Feedback</h1></div>
+                <br><br>
+                <div class="input-field">
+                    <label for="username" id="LabelText">Name: </label><br>
+                    <input type="text" id="username" placeholder=" Enter your name" required>
+                </div>
+                <br><br>
+                <div class="input-field">
+                    <label for="email" id="LabelText">Email: </label><br>
+                    <input type="email" id="email" name="email" placeholder=" Enter your email">
+                </div>
+                <br><br>
+                <div class="container1">
+                    <label>Was this your first time visiting?</label><br><br>
+                    <input type="radio" name="First-Visit" value="Yes" required id="yes">
+                    <label for="yes">Yes</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="First-Visit" value="No" id="no">
+                    <label for="no">No</label>
+                </div>
+                <br><br>
+                <div class="container2">
+                    <label>Was this website informative & user-friendly?</label><br><br>
+                    <input type="radio" id="Y" name="User-friendly" value="Yes" required>
+                    <label for="Y">Yes</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="N" name="User-friendly" value="No" required>
+                    <label for="N">No</label>
+                    <br><br>
+                    <textarea id="reason" name="Suggestions" rows="5" cols="50" placeholder="Suggest any improvement (if 'No' is selected)"></textarea>
+                </div>
+                <br><br>
+                <label for="stars" id="Rate">Rate Us</label>
+                <div class="rating">
+                    <input type="hidden" id="ratingInput" name="rating" value="">
+                    <i class='bx bx-star star' style="--i: 0;"></i>
+                    <i class='bx bx-star star' style="--i: 1;"></i>
+                    <i class='bx bx-star star' style="--i: 2;"></i>
+                    <i class='bx bx-star star' style="--i: 3;"></i>
+                    <i class='bx bx-star star' style="--i: 4;"></i>
+                </div>
+                <br><br>
+                <textarea id="opinion" name="User-opinion" cols="30" rows="5" placeholder="Describe your experience..." required></textarea>
+                <br><br>
+                <div class="btn-group">
+                    <button type="submit" class="btn-submit">Submit</button>
+                    <button type="reset" class="btn-cancel">Cancel</button>
+                </div>
+            </form>
         </div>
-<br><br>
-
-        <div class="input-field">
-            <label for="email" id="LabelText">Email: </label><br>
-            <input type="email" id="email" name="email" placeholder=" Enter your email">
-
-
-        </div>
-
-
-        <br><br>
-
-        <div class="container1">
-            <label>Was this is your first time visting ?</label><br><br>
-                        
-            <input type="radio" name="First-Visit" value="Yes" required id="y">
-            <label for="yes">Yes</label>
-            
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          
-            <input type="radio" name="First-Visit" value="No" id="n">
-            <label for="no">No</label>
-
-
-        </div>
-<br><br>
-        <div class="container2">
-            <label> Was this website informative & user friendly?</label><br><br>
-            <input type="radio" id="Y" name="User-friendly" required>
-            <label for="Yes">Yes</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="radio" id="N" name="User-friendly" required>
-            <label for="No">No</label>
-            <br><br>
-
-            <textarea name="Suggestions" id="reason" rows="5" cols="50" placeholder="Suggest any improvement (if 'No' is selected)"></textarea>
-        </div>
-
-<br>
-<label for="stars" id="Rate">Rate Us</label>
-<div class="rating">
-    <input type="number" name="rating" hidden id="stars">
-    <i class='bx bx-star star' style="--i: 0;"></i>
-    <i class='bx bx-star star' style="--i: 1;"></i>
-    <i class='bx bx-star star' style="--i: 2;"></i>
-    <i class='bx bx-star star' style="--i: 3;"></i>
-    <i class='bx bx-star star' style="--i: 4;"></i>
-    
-</div>
-<textarea id="opinion" name="User-opinion" cols="30" rows="5" placeholder="Describe your experience..."></textarea>
-       
-<br><br>
-        
-
-
-<div class="btn-group">
-            <button type="submit" class="btn-submit">Submit</button>
-            <button type="reset" class="btn-cancel">Cancel</button>
-        </div>
-
-        
-
-
-
-    </div>
- </form>
-
-
-
-    
-
     </main>
+
+  
+
+    <script>
+        const stars = document.getElementsByClassName('star');
+        const ratingInput = document.getElementById('ratingInput');
+
+        for (let i = 0; i < stars.length; i++) {
+            stars[i].addEventListener('click', function() {
+                ratingInput.value = i + 1; // Set the rating value
+
+                // Remove 'selected' class from all stars
+                for (let j = 0; j < stars.length; j++) {
+                    stars[j].classList.remove('selected');
+                }
+
+                // Add 'selected' class to the clicked star and all preceding stars
+                for (let j = 0; j <= i; j++) {
+                    stars[j].classList.add('selected');
+                }
+            });
+        }
+    </script>
+    <script src="Feedback.js"></script>
+
 
     <footer class="footer">
         <nav class="footerlist">
@@ -132,9 +116,6 @@
             <a href="PageEditorStudent4.html">Nithika Thewjan</a>
         </nav>
     </footer>
-
-
-
-    <script src="Feedback.js"></script>
+   
 </body>
 </html>
