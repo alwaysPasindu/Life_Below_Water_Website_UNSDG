@@ -30,7 +30,7 @@ h1 {
     background-color: #f3f3f3;
     border: 1px solid #ccc;
     border-radius: 5px;
-    position: absolute;
+    position: relative;
     top: 210px;
 }
 
@@ -239,7 +239,7 @@ h2 {
     cursor: pointer;
     position: absolute;
     left: 570px;
-    top: 300px;
+    top: 220px;
 }
 
 .submit {
@@ -252,13 +252,13 @@ h2 {
     width: 80px;
     text-align: center;
     cursor: pointer;
-    top: 300px;
+    top: 220px;
 
 }
 
 .successful {
     font-size: 50px;
-    margin-top: 200px;
+    margin-top: 230px;
     color: wheat;
     text-align: center;
 }
