@@ -20,7 +20,7 @@ if(document.readyState == "loading"){
     ready();
 }
 
-//making function
+//making functions
 
 function ready() {
     //remove items from cart
