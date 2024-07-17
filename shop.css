@@ -18,9 +18,12 @@
 }
 #h1{
     text-align: center;
+
+    font-family: sans-serifs;
     font-family: "Playwrite HR Lijeva", cursive;
+
     font-style: normal;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bolder;
 }
 .cart_icon{
