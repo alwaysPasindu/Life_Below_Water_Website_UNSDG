@@ -11,7 +11,7 @@ main{
     margin-top: 110px;
     margin-left: 10%;
     margin-right: 12%;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 .map{
@@ -30,8 +30,8 @@ main{
 
 h1{
     font-size: 70px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     /* margin-left:50px; */
     text-align: center;
     color: #fff;
@@ -60,5 +60,31 @@ a:hover text {
     fill:white; 
 }
 
+footer{
 
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    }
+    
+    .footerlist{
+    
+    display: flex;
+    padding: 25px 3%;
+    backdrop-filter: blur(0px);
+    }
+    
+    .footerlist a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 75px 0 90px;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all .70s ease;
+    
+    }
+    
+    .footerlist a:hover{
+    color: aqua;
+    }
     

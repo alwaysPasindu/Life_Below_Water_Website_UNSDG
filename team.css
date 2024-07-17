@@ -1,10 +1,27 @@
-body {
+/* body {
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
 }
 
 h1 {
@@ -14,11 +31,7 @@ h1 {
     font-size: 60px;
     color: wheat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background-image: linear-gradient(43deg, #5f7403 0%, #e8cfe6 46%, #cbb408 100%); */
-    /* background-clip: text;
-    color: transparent; */
     font-weight: 900;
-
 }
 
 .mainDiv {
@@ -29,11 +42,11 @@ h1 {
     border: 2px solid rgba(255, 255, 255, .5);
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    /* box-shadow: 0 0 30px rgba(0, 0, 0, .5); */
     box-shadow: 0 0 30px rgb(164, 161, 161);
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 150px;
+    left: 50px;
     font-size: 20px;
 }
 
@@ -58,7 +71,6 @@ h1 {
     transition: transform 0.3s ease;
 }
 
-
 .team_Member:hover img {
     transform: scale(1.1);
 }
@@ -77,10 +89,18 @@ h1 {
     text-align: left;
     width: 100%;
     box-sizing: border-box;
-
 }
 
 .team_Member:hover .sudent_details {
     opacity: 1;
     bottom: 0;
+}
+
+.work {
+    font-size: 15px;
+}
+
+.footer {
+
+    margin-top: 250px;
 }

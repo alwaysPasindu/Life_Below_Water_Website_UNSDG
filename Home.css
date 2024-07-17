@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+<<<<<<< Updated upstream
 }
 
 body{
@@ -14,25 +15,46 @@ body{
     background-position: fixed;
     width: 100vw; 
     overflow-x: hidden;
+=======
+
+>>>>>>> Stashed changes
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< Updated upstream
     padding: 1.3rem 10%;
    
     display:flex;
     justify-content: flex-start;
+=======
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+>>>>>>> Stashed changes
     align-items: center;
     z-index: 100;
    
     border-bottom: 2px solid rgba(255, 255, 255, .2);
+<<<<<<< Updated upstream
+=======
+
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    /* margin-right: 65px; */
+>>>>>>> Stashed changes
 }
 
 
-.header::before{
+.header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -50,9 +72,9 @@ body{
     position: absolute;
     top: 0;
     left: -100%;
-    width: 100%  ;
+    width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
     transition: .5s;
 
 
@@ -63,6 +85,7 @@ body{
     left: 100%;
 }
 
+<<<<<<< Updated upstream
 .logo{
  
     text-decoration: none;
@@ -78,10 +101,22 @@ body{
 
 .navbar a {
     
+=======
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.navbar a {
+>>>>>>> Stashed changes
     position: relative;
     font-size: 20px;
     color: #fff;
     text-decoration: none;
+<<<<<<< Updated upstream
     
     padding-bottom: 5px;
     padding-left: 8px;
@@ -125,6 +160,37 @@ body{
 
 #check {
     display: none;
+=======
+    margin-left: 65px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+body {
+    min-height: 101vh;
+    background: url(images/Home/a1ca9477-5065-47ae-aab5-33b6ff276569.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+>>>>>>> Stashed changes
 }
 
 
@@ -161,6 +227,7 @@ Breakpoints */
 
     }
     
+<<<<<<< Updated upstream
 
     .icons #close-icon{
         display: none;
@@ -418,3 +485,7 @@ footer{
 
 
 
+=======
+} 
+     */
+>>>>>>> Stashed changes
