@@ -34,6 +34,10 @@
             <h1>PROTECTING CORAL REEF...</h1>
         </div>
         <div class="contentContainer">
+            <svg class="downarrow" id="downarrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5m0 14-4-4m4 4 4-4"/>
+              </svg>
+              
             <diV class="introduction">
                <p> Coral reefs are among the most mesmerizing and biologically rich ecosystems on our planet. Often called 
                     the "rainforests of the sea," they support an incredible diversity of life and provide essential services
@@ -130,7 +134,10 @@
                     beautiful underwater landscapes; they are vital to the health of our planet and our future. It is our responsibility 
                     to protect and preserve them for the benefit of all living creatures</p>
                 </diV>
-    
+                <svg class="uparrow" id="uparrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v13m0-13 4 4m-4-4-4 4"/>
+                  </svg>
+                  
         </div>
         
 
@@ -144,5 +151,14 @@
             </nav>
         </footer>
     </div>
+    <script>
+        document.getElementById("uparrow").onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.getElementById("downarrow").onclick = function() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
