@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    background: url(images/Home/BGPEd.png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: fixed;
+    width: 100vw;
+    overflow-x: hidden;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.399);
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, -1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.logo {
+    text-decoration: none;
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    margin-right: auto;
+    align-self: left;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    font-weight: 750;
+    margin-left: 30px;
+    transition: .3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #0ef;
+}
+
+.content {
+    max-width: 800px;
+    margin: 150px auto 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #0ef;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.tips {
+    background-color: rgba(14, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.tips h3 {
+    color: #0ef;
+    margin-bottom: 15px;
+}
+
+.tips ul {
+    list-style-type: none;
+}
+
+.tips li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tips li::before {
+    content: '•';
+    color: #0ef;
+    position: absolute;
+    left: 0;
+}
+
+.fact-box {
+    background-color: rgba(14, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#factText {
+    font-style: italic;
+}
+
+button {
+    background-color: #0ef;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00c8d6;
+}

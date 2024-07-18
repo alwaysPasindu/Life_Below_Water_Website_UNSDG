@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reducing Plastic Waste in Ocean</title>
+    <link rel="stylesheet" href="contentPageStudent4.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="Home.html" class="logo">
+            <img src="images/Home/Sustainable_Development_Goal_14.png" alt="LOGO" class="logo">
+        </a>
+        <nav class="navbar">
+            <a href="Home.html" style="--i:0;">HOME</a>
+            <a href="Gallery.html" style="--i:1;">GALLERY</a>
+            <a href="shop.html" style="--i:2;">SHOP</a>
+            <a href="Feedback.html" style="--i:3;">FEEDBACK</a>
+            <a href="profile.html" style="--i:4;">USER PROFILE</a>
+            <a href="team.html" style="--i:5;">ABOUT US</a>
+            <a href="Sitemap.html" style="--i:6;">SITE MAP</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Reducing Plastic Waste in the Ocean</h1>
+        <p>Plastic pollution in our oceans has become one of the most pressing environmental issues of our time. Every year, millions of tons of plastic waste enter our marine ecosystems, causing devastating effects on marine life and the overall health of our oceans.</p>
+        <h2>The Impact of Plastic Pollution</h2>
+        <p>Plastic waste in the ocean has far-reaching consequences:</p>
+        <ul>
+            <li>Marine animals often mistake plastic for food, leading to malnutrition and death</li>
+            <li>Plastic debris can entangle marine life, causing injury or death</li>
+            <li>Microplastics are entering the food chain, potentially affecting human health</li>
+            <li>Plastic pollution damages coral reefs and other crucial marine habitats</li>
+        </ul>
+        <div class="tips">
+            <h3>Tips to Reduce Plastic Waste</h3>
+            <ul>
+                <li>Use reusable bags, water bottles, and food containers</li>
+                <li>Avoid single-use plastics like straws and cutlery</li>
+                <li>Choose products with minimal or recyclable packaging</li>
+                <li>Properly recycle plastic items</li>
+                <li>Participate in beach clean-ups or local environmental initiatives</li>
+            </ul>
+        </div>
+        <div class="fact-box">
+            <h3>Did You Know?</h3>
+            <p id="factText">By 2050, there could be more plastic than fish in the ocean by weight.</p>
+            <button onclick="changeFact()">Show Another Fact</button>
+        </div>
+    </div>
+
+    <script>
+        const facts = [
+            "By 2050, there could be more plastic than fish in the ocean by weight.",
+            "Over 1 million seabirds die each year from plastic ingestion or entanglement.",
+            "Plastic bags can take up to 1,000 years to decompose in the ocean.",
+            "8 million metric tons of plastic enter the oceans each year.",
+            "Microplastics have been found in 100% of sea turtle species."
+        ];
+
+        let currentFactIndex = 0;
+
+        function changeFact() {
+            currentFactIndex = (currentFactIndex + 1) % facts.length;
+            document.getElementById("factText").textContent = facts[currentFactIndex];
+        }
+    </script>
+</body>
+</html>
