@@ -17,7 +17,6 @@ body {
     color: white;
 }
 
-/*  */
 
 .content {
     max-width: 1000px;
@@ -34,6 +33,7 @@ max-width: 950px;
     position: relative;
     text-align: left;
     color: white;
+    margin-bottom: 15px;
   }
 
 .bottom-left {
@@ -59,6 +59,7 @@ h2 {
 p {
     margin-bottom: 15px;
     line-height: 1.6;
+    font-size: 18px;
 }
 
 .tips {
