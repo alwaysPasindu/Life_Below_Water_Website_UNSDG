@@ -17,65 +17,41 @@ body {
     color: white;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 100;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.399);
-}
-
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, -1);
-    backdrop-filter: blur(50px);
-    z-index: -1;
-}
-
-.logo {
-    text-decoration: none;
-    height: 75px;
-    width: 75px;
-    border-radius: 10px;
-    margin-right: auto;
-    align-self: left;
-}
-
-.navbar a {
-    position: relative;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    padding-bottom: 5px;
-    padding-left: 8px;
-    font-weight: 750;
-    margin-left: 30px;
-    transition: .3s;
-}
-
-.navbar a:hover, .navbar a.active {
-    color: #0ef;
-}
+/*  */
 
 .content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 150px auto 50px;
-    padding: 20px;
+    padding: 30px;
+    margin-bottom: 100px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
+.image{
+max-width: 950px;
+}
+.image_container {
+    position: relative;
+    text-align: left;
+    color: white;
+  }
 
-h1, h2 {
+.bottom-left {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    font-size:30px;
+    font-weight: bold;
+    
+  }
+
+h1{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-size: 60px;
+}
+
+h2 {
     color: #0ef;
     margin-bottom: 20px;
 }
@@ -123,6 +99,22 @@ p {
 
 #factText {
     font-style: italic;
+}
+.section {
+    margin-top: 30px;
+}
+
+.call-to-action {
+    background-color: rgba(14, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.call-to-action h3 {
+    color: #0ef;
+    margin-bottom: 15px;
 }
 
 button {

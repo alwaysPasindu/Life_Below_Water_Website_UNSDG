@@ -197,12 +197,12 @@ section{
 
 .card-button{
     display: inline;
-    background-color: #0192ba;
+    background-color: #01c0ca;
     border-radius: 5px;
     padding: 8px 16px;
     margin-bottom: 10px;
     color: #ffffff;
-    transition: .5s;
+    transition: .4s;
 }
 
 .card-content a{
@@ -211,10 +211,10 @@ section{
 }
 
 .card-content a:hover{
-    background: #00abf0;
-    color: #fff;
-    border-color: #00abf0;
-    box-shadow: 0 0 10px #00abf0;
+    background: #ffffff;
+    color: #0080b7;
+    /* border-color: #00abf0; */
+    box-shadow: 0 0 5px #00abf0;
 }
 
 
