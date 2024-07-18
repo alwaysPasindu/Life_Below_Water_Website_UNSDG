@@ -3,11 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-    /* background-image: url();
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover; */
+
 }
 
 body {
@@ -89,7 +85,6 @@ h2 {
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
@@ -115,8 +110,6 @@ h2 {
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgb(164, 161, 161);
-    /* box-shadow: 0 0 30px rgba(0, 0, 0, .5); */
-    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
@@ -146,13 +139,7 @@ h2 {
 
 }
 
-/* .maleRadioBttn {
-    position: absolute;
-    top: 0px;
-    color: white;
-    font-weight: bold;
-    padding: 18px;
-} */
+
 
 .next {
     position: absolute;
@@ -281,32 +268,3 @@ h2 {
 .footer {
     margin-top: 750px;
 }
-
-/* .footer {
-
-    bottom: 0;
-    width: 100%;
-    backdrop-filter: blur(10px);
-    top: 200px;
-}
-
-.footerlist {
-
-    display: flex;
-    padding: 25px 3%;
-    backdrop-filter: blur(0px);
-}
-
-.footerlist a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0 75px 0 90px;
-    font-size: 20px;
-    font-weight: 800;
-    transition: all .70s ease;
-
-}
-
-.footerlist a:hover {
-    color: aqua;
-} */
