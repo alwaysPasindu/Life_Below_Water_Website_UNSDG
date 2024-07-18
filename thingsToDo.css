@@ -39,8 +39,6 @@ p{
 
    
     box-shadow : 0px 2px 4px rgba(0, 0, 0, .2);
-   
-  /* margin-top: 44px; */
    border-radius: 1rem;
   
    backdrop-filter: blur(30px);
@@ -60,7 +58,6 @@ p{
 
 .list:hover{
     backdrop-filter: blur(90px);
-    /* background-color: rgba(62, 62, 62, 62); */
     color:aqua; 
     transform: scale(1.03);
     transition: all .1s ease;

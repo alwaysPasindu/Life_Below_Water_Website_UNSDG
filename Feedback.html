@@ -31,15 +31,15 @@
     <main>
         <div class="form">
             <form action="mailto:always.pasindu@gmail.com" id="form" method="post" enctype="text/plain">
-                <div class="heading"><h2>Leave us a Feedback</h1></div>
+                <div class="heading"><h2>Leave us a Feedback</h2></div>
                 <br><br>
                 <div class="input-field">
-                    <label for="username" id="LabelText">Name: </label><br>
-                    <input type="text" id="username" placeholder=" Enter your name" required>
+                    <label for="username" id="LabelText1">Name: </label><br>
+                    <input type="text" name="Name" id="username" placeholder=" Enter your name" required>
                 </div>
                 <br><br>
                 <div class="input-field">
-                    <label for="email" id="LabelText">Email: </label><br>
+                    <label for="email" id="LabelText2">Email: </label><br>
                     <input type="email" id="email" name="email" placeholder=" Enter your email">
                 </div>
                 <br><br>
@@ -62,8 +62,8 @@
                     <br><br>
                     <textarea id="reason" name="Suggestions" rows="5" cols="50" placeholder="Suggest any improvement (if 'No' is selected)"></textarea>
                 </div>
-                <br><br>
-                <label for="stars" id="Rate">Rate Us</label>
+                <br>
+                <label  id="Rate">Rate Us</label> <br><br>
                 <div class="rating">
                     <input type="hidden" id="ratingInput" name="rating" value="">
                     <i class='bx bx-star star' style="--i: 0;"></i>
@@ -72,7 +72,7 @@
                     <i class='bx bx-star star' style="--i: 3;"></i>
                     <i class='bx bx-star star' style="--i: 4;"></i>
                 </div>
-                <br><br>
+                
                 <textarea id="opinion" name="User-opinion" cols="30" rows="5" placeholder="Describe your experience..." required></textarea>
                 <br><br>
                 <div class="btn-group">
