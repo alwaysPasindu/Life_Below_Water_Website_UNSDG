@@ -7,18 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const previewButton = document.createElement("button");
     const confirmationMessage = document.createElement("div");
 
-    // previewButton.innerText = "Preview";
-    // previewButton.type = "button";
-    // previewButton.classList.add("btn-preview");
-
-    // form.appendChild(previewButton);
-    // form.appendChild(confirmationMessage);
-
-    // previewButton.addEventListener("click", function () {
-    //     if (validateForm()) {
-    //         previewForm();
-    //     }
-    // });
+   
 
     form.addEventListener("submit", function (event) {
         if (!validateForm()) {

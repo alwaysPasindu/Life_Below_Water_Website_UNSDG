@@ -15,6 +15,7 @@ main{
 .heading{
     font-size: 1.3rem;
     text-align: center;
+    color:white;
 }
 
 .form{
@@ -28,11 +29,18 @@ main{
     box-shadow: 0 5px 9px rgba(0, 0, 0.5, 0.9);
 }
 
-#LabelText{
+#LabelText1{
     text-align: left;
     font-size: 1.4rem;
     font-weight: 700;
 }
+
+#LabelText2{
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 
 #username, #email {
     height: 35px;
