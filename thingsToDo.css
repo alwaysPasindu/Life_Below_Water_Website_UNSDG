@@ -38,7 +38,7 @@ p{
     color: aliceblue;
 
    
-    box-shadow : 0px 2px 4px rgba(0, 0, 0, .2);
+    /* box-shadow : 0px 2px 4px rgba(0, 0, 0, .2); */
    border-radius: 1rem;
   
    backdrop-filter: blur(30px);
@@ -63,3 +63,19 @@ p{
     transition: all .1s ease;
      
 }
+
+
+.bottom-barr{
+    font-size: 15px;
+    backdrop-filter: blur(100px);
+    text-align: justify;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-barr p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+   
+}
+
