@@ -389,7 +389,7 @@ footer{
     padding-top: 10px;
 }
 .container{
-    width: 1150px;
+    width: 1050px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -399,7 +399,7 @@ footer{
 }
 .H3{
     text-shadow: yellow;
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 15px;
     text-shadow: 2px 4px 8px rgba(0, 0, 0, 1); 
     text-align: center;
@@ -409,6 +409,11 @@ footer{
     margin: auto;
     padding: 7px;
 }
+
+.elements{
+    font-size: 19px;
+}
+
 .footer-content ul{
     text-align: center;
 }
@@ -417,7 +422,7 @@ footer{
     color: white;
 }
 .list li{
-   
+    font-size: 19px;
     width: auto;
     text-align: center;
     list-style-type:none;
@@ -449,7 +454,7 @@ footer{
 }
 .social-icons i{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 a{
     text-decoration: none;
@@ -462,7 +467,7 @@ a:hover{
     color: aqua;
 }
 .bottom-bar{
-    
+    font-size: 15px;
     backdrop-filter: blur(100px);
     text-align: center;
     padding: 10px 0;
@@ -475,42 +480,6 @@ a:hover{
    
 }
 
-
-
-
-
-
-
-/* footer{
-    
-    bottom: 0;
-    width: 100%;
-    backdrop-filter: blur(10px);
-    
-}
-
-.footerlist{
-    
-    display: flex;
-    padding: 25px 3%;
-    backdrop-filter: blur(0px);
-    
-}
-
-.footerlist a{
-    color: #fff;
-    text-decoration: none;
-    padding: 0 75px 0 90px;
-    font-size: 20px;
-    font-weight: 800;
-    transition: all .70s ease;
-
-}
-
-.footerlist a:hover{
-    color: aqua;
-} */
- 
 
 
 
