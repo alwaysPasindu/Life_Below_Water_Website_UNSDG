@@ -87,11 +87,6 @@ h1{
 }
 body {font-family: Arial, Helvetica, sans-serif;}
 
-/* Img {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-} */
 
 .Thumbnail:hover {
    transform: scale(1.06);
