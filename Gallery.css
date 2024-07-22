@@ -8,9 +8,7 @@ html{
     /* Storing Colors In Variables */
     --body-clr: #f6f6fe;
     --primary-cLr: #05555c;
-    --primary-light-clr: #eaf3fa;
-    --links-cLr: #186f78;
-    --text-clr: #3f7277;
+
 }
 body{
     width: auto;
