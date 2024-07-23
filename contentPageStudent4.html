@@ -95,7 +95,7 @@
             <div class="fact-box">
                 <h3>Did You Know?</h3>
                 <p id="factText">By 2050, there could be more plastic than fish in the ocean by weight.</p>
-                <button onclick="changeFact()">Show Another Fact</button>
+                <button class="factbtn" onclick="changeFact()">Show Another Fact</button>
             </div>
         </div>
 
@@ -134,9 +134,33 @@
             <p>Copyright &copy;  2024 GROUP. E  |  Designed By <a href="PageEditorStudent4.html"><i>Nithika Wickramasinghe</i></a></p>
         </div>
         </footer>
-    
+
+        <button class="go-top-btn">
+            <img src="images/PageEditor4/Scroll_Up_Button.png" alt="arrow up">
+        </button>
+
+          
 
     <script>
+        const goTopBtn = document.querySelector('.go-top-btn');
+
+        window.addEventListener('scroll', checkHeight)
+
+        function checkHeight(){
+        if(window.scrollY > 200) {
+            goTopBtn.style.display = "flex"
+        } else {
+            goTopBtn.style.display = "none"
+        }
+        }
+
+        goTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+        })
+
         const facts = [
            "By 2050, there could be more plastic than fish in the ocean by weight.",
             "Over 1 million seabirds die each year from plastic ingestion or entanglement.",
@@ -154,6 +178,7 @@
             currentFactIndex = (currentFactIndex + 1) % facts.length;
             document.getElementById("factText").textContent = facts[currentFactIndex];
         }
+        
     </script>
 </body>
 </html>

@@ -118,7 +118,7 @@ p {
     margin-bottom: 15px;
 }
 
-button {
+.factbtn {
     background-color: #0ef;
     color: black;
     border: none;
@@ -129,6 +129,24 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.factbtn:hover {
     background-color: #00c8d6;
 }
+.go-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .go-top-btn img {
+    width: 180px;
+    }
