@@ -130,7 +130,7 @@ h3{
     text-align: center;
     color: #eeeaea;
   }
-  #footerPart{
+#footerPart{
     padding-top: 5%;
   }
 .shopItem{
@@ -167,7 +167,6 @@ h3{
     top: 18%;
     bottom: 0%;
     right: -100%;
-    /* left: -100%; */
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transform: translate(0%);
