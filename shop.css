@@ -76,10 +76,6 @@ h3{
     font-weight: 400;
     font-style: normal;
 }
-.shop_content{
-    justify-content: space-evenly;
-    display: flex;
-}
 .product_row{
     justify-content: space-between; 
     display: inline-flex;
