@@ -82,7 +82,7 @@ h2 {
     position: absolute;
     top: 180px;
     left: 1090px;
-    height: 500px;
+    height: 600px;
     width: 370px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
@@ -278,35 +278,139 @@ h2 {
 
 }
 
-.footer {
-    margin-top: 750px;
+
+
+
+
+
+
+footer{
+    backdrop-filter: blur(50px);
+    color: white;
+    font-family: sans-serif;
+    margin-top: 800px;
+   
+    padding-top: 10px;
 }
-
-/* .footer {
-
-    bottom: 0;
-    width: 100%;
-    backdrop-filter: blur(10px);
-    top: 200px;
-}
-
-.footerlist {
-
+.container{
+    width: 1050px;
+    margin: auto;
     display: flex;
-    padding: 25px 3%;
-    backdrop-filter: blur(0px);
+    justify-content: center;
+}
+.footer-content{
+    width: 100%;
+}
+.H3{
+    text-shadow: yellow;
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 1); 
+    text-align: center;
+}
+.footer-content p{
+    width:180px;
+    margin: auto;
+    padding: 7px;
 }
 
-.footerlist a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0 75px 0 90px;
+.elements{
+    font-size: 19px;
+}
+
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+    color: white;
+}
+.list li{
+    font-size: 19px;
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: aqua;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
     font-size: 20px;
-    font-weight: 800;
-    transition: all .70s ease;
-
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: aqua;
+}
+.social-icons i:hover{
+    color: aqua;
+}
+.bottom-bar{
+    font-size: 15px;
+    backdrop-filter: blur(100px);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: white;
+    
+    font-size: 16px;
+   
 }
 
-.footerlist a:hover {
-    color: aqua;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
