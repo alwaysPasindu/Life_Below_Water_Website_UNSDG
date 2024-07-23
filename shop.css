@@ -15,8 +15,6 @@
 }
 #h1{
     text-align: center;
-
-    font-family: sans-serifs;
     font-family:sans-serif;
     font-style: normal;
     font-size: 70px;
@@ -77,6 +75,9 @@ h3{
     font-family: sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.shop_content{
+    justify-content: center;
 }
 .product_row{
     justify-content: space-between; 
