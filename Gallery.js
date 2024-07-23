@@ -1,4 +1,4 @@
-
+document.addEventListener('DOMContentLoaded', function() {
     // Get all elements with IDs starting with "myImg"
     var images = document.querySelectorAll('[id^="myImg"]');
     
@@ -37,31 +37,32 @@
     // }
 
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const filterButtons = document.querySelectorAll('.button-group .button');
-        const thumbnails = document.querySelectorAll('.Thumbnail');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const filter = this.getAttribute('data-filter');
+   
+    const filterButtons = document.querySelectorAll('.button-group .button');
+    const thumbnails = document.querySelectorAll('.Thumbnail');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
                 
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
                 
-                // Add active class to clicked button
-                this.classList.add('active');
-                
-                thumbnails.forEach(thumbnail => {
-                    if (filter === 'all' || thumbnail.getAttribute('data-filter') === filter) {
-                        thumbnail.style.display = 'inline-block';
-                    } else {
-                        thumbnail.style.display = 'none';
-                    }
-                });
+            // Add active class to clicked button
+            this.classList.add('active');
+               
+            thumbnails.forEach(thumbnail => {
+                if (filter === 'all' || thumbnail.getAttribute('data-filter') === filter) {
+                    thumbnail.style.display = 'inline-block';
+                } else {
+                    thumbnail.style.display = 'none';
+                }
             });
         });
     });
+    
+    // fontSelect.onchange = function() {
+    //     modalText.style.fontFamily = fontSelect.value;
+    // }
 
-
-
+});
     
