@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+h1{
+    color: #fff;
+}
+
 body {
     margin: 0 auto;
     min-height: 100vh;
