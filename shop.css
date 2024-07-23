@@ -78,6 +78,7 @@ h3{
 }
 .shop_content{
     justify-content: space-evenly;
+    display: flex;
 }
 .product_row{
     justify-content: space-between; 
