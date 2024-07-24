@@ -77,7 +77,7 @@ h3{
     font-style: normal;
 }
 .shop_content{
-    justify-content: center;
+    margin-left: 70px;
 }
 .product_row{
     justify-content: space-between; 
